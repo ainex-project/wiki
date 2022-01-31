@@ -22,7 +22,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://halotroop.com"><img src="https://avatars.githubusercontent.com/u/30361266?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Caroline Joy Bell</b></sub></a><br /><a href="https://github.com/halotroop2288/xenia-wiki-temp/commits?author=halotroop2288" title="Documentation">📖</a> <a href="#content-halotroop2288" title="Content">🖋</a></td>
+    <td align="center"><a href="http://halotroop.com"><img src="https://avatars.githubusercontent.com/u/30361266?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Caroline Joy Bell</b></sub></a><br /><a href="https://github.com/halotroop2288/xenia-wiki-temp/commits?author=halotroop2288" title="Documentation">📖</a> <a href="#content-halotroop2288" title="Content">🖋</a> <a href="#design-halotroop2288" title="Design">🎨</a></td>
   </tr>
 </table>
 
