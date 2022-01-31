@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Margen67",
+      "name": "Margen67",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3462541?v=4",
+      "profile": "https://github.com/Margen67",
+      "contributions": [
+        "content",
+        "blog"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "xenia-wiki-temp",
+  "projectOwner": "halotroop2288",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
