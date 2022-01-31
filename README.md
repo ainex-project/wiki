@@ -11,7 +11,7 @@ See the [contribution guide](https://xenia.jp/wiki/meta/contributing) for detail
 
 ## License
 
-The articles, images, and  on this website are licensed under [CC-BY-SA-4.0](LICENSE).
+The articles, images, and other original works on this website are licensed under [CC-BY-SA 4.0](LICENSE).
 
 ## Contributors ✨
 
