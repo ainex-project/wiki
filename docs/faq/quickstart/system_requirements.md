@@ -41,7 +41,7 @@
   * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide frame rates too low for comfortable playing.
     * AMD GPUs also fall under this due to Xenia triggering driver bugs causing crashes.
 * RAM: 4GB
-* [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+* [The Latest x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 Xenia doesn't require any Xbox 360 system files.
 
@@ -53,9 +53,9 @@ if one is not detected. Make sure that you have the latest drivers installed. **
 ***OpenGL and Direct3D11 or lower are not, and never will be supported.***
 
 Windows Update tends to lag behind, so download GPU drivers from your manufacturer:
-  * **[AMD](https://www.amd.com/en/support)**
-  * **[NVIDIA](https://www.nvidia.com/Download/index.aspx)**
-  * **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
+	- **[AMD](https://www.amd.com/en/support)**
+	- **[NVIDIA](https://www.nvidia.com/Download/index.aspx)**
+	- **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
 
-!!! info "Next section..."
-	- [Where to Download Xenia](download.md)
+!!! success "Next section..."
+	- [Where to Download Xenia](download)

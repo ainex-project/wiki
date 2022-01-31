@@ -1,4 +1,12 @@
+# Home
+
 Welcome to the **Xenia Wiki** - the primary source of documentation for Xenia.
+
+!!! info "[Game Compatibility](https://github.com/xenia-project/game-compatibility/issues)"
+	[=12/1507 "Nothing"]{: background=red}
+	[=39/1507 "Plays Intros"]
+	[=936/1507 "Gets In-game"]
+	[=266/1507 "Playable"]
 
 !!! note "Tab Navigation"
     Use tabs in header for navigation
@@ -9,5 +17,6 @@ Welcome to the **Xenia Wiki** - the primary source of documentation for Xenia.
     Please see [README.md](https://github.com/xenia-project/wiki/blob/master/README.md) for details on hosting the docs locally and contributing.
 
 !!! info "Helpful Links"
-	[Quickstart Guide (Start Here!)](/faq/quickstart/index.md)
-	[Frequently Asked Questions][/faq/faq.md]
+	- [Quickstart Guide (Start Here!)](faq/quickstart/)
+	- [Frequently Asked Questions](faq/)
+	- [Developer Guide](development/)

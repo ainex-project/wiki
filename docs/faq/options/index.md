@@ -6,7 +6,7 @@
 * [Show file name extensions in Explorer](https://social.technet.microsoft.com/wiki/contents/articles/1784.windows-how-to-view-file-name-extensions.aspx).
 * Go to `Documents\Xenia` and open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/).
 * If a `portable.txt` file is present in the same directory as `xenia.exe` it will be in the same directory as `xenia.exe`.
-	* Per-game configs go in `config\TitleID.config.toml`. Note that '''per-game configs are highly unstable''', only very few options can be changed from it safely or at all, as most emulator subsystems are initialized before per-game configs are loaded.
+	* Per-game configs go in `config\TitleID.config.toml`. Note that ***per-game configs are highly unstable***, only very few options can be changed from it safely or at all, as most emulator subsystems are initialized before per-game configs are loaded.
 * For launchers/frontends like [Bottlenose](https://github.com/quinton-ashley/bottlenose) you can use the `--config` launch parameter to specify what config to use.
 	* To launch specific games, add the path to the game before the launch options. For example: `xenia.exe path/to/game/default.xex --vsync=false`
 
