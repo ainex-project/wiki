@@ -11,7 +11,8 @@ The Xenos runs commands supplied to it directly by the DirectX bare-bones driver
 via a ringbuffer located in system memory.
 
 The bulk of the command processing code is located at
-[src/xenia/gpu/command_processor.cc](https://github.com/xenia-project/xenia/src/xenia/gpu/command_processor.cc)
+[src/xenia/gpu/command_processor.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/command_processor.cc)
+
 
 ### EDRAM
 
@@ -24,14 +25,14 @@ TODO: More documentation
 
 ### General
 
-See the top of [gpu_flags.cc](https://github.com/xenia-project/xenia/src/xenia/gpu/gpu_flags.cc).
+See the top of [gpu_flags.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/gpu_flags.cc).
 
 `--vsync=false` will attempt to render the game as fast as possible instead of
 waiting for a fixed 60hz timer.
 
 ### Vulkan
 
-See the top of [vulkan_gpu_flags.cc](https://github.com/xenia-project/xenia/src/xenia/gpu/vulkan/vulkan_gpu_flags.cc).
+See the top of [vulkan_gpu_flags.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/vulkan/vulkan_gpu_flags.cc).
 
 `vulkan_dump_disasm=true` "Dump shader disassembly. NVIDIA only supported."
 
@@ -89,8 +90,7 @@ frames) while running that can be opened and inspected in a separate app.
 The basic workflow is:
 
 1. Capture the frame in game (using F4) or a stream of frames.
-2. Add the file path to the xe-gpu-trace-viewer Debugging command line in
-Visual Studio.
+2. Add the file path to the xe-gpu-trace-viewer Debugging command line in Visual Studio.
 3. Launch xe-gpu-trace-viewer.
 4. Poke around, find issues, etc.
 5. Modify code.
@@ -115,93 +115,95 @@ you to seek through them in the trace viewer. These files will get large.
 
 ### Command Buffer/Registers
 
-Registers documented at [register_table.inc](https://github.com/xenia-project/xenia/src/xenia/gpu/register_table.inc).
+Registers documented at [register_table.inc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/register_table.inc).
 
-PM4 commands documented at [xenos.h](https://github.com/xenia-project/xenia/src/xenia/gpu/xenos.h#L521).
+PM4 commands documented at [xenos.h](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/xenos.h#L521).
 
 #### Performance Counters that may be read back by D3D
 
-They are 64-bit values and have a high and low 32-bit register as well as a `SELECT` register each:
+|They are 64-bit values and have a high and low 32-bit register as well as a `SELECT` register each:|
+|:-----------------:|
+| CP_PERFCOUNTER0   |
+|                   |
+| RBBM_PERFCOUNTER0 |
+| RBBM_PERFCOUNTER1 |
+|                   |
+| SQ_PERFCOUNTER0   |
+| SQ_PERFCOUNTER1   |
+| SQ_PERFCOUNTER2   |
+| SQ_PERFCOUNTER3   |
+|                   |
+| VGT_PERFCOUNTER0  |
+| VGT_PERFCOUNTER1  |
+| VGT_PERFCOUNTER2  |
+| VGT_PERFCOUNTER3  |
+|                   |
+| VC_PERFCOUNTER0   |
+| VC_PERFCOUNTER1   |
+| VC_PERFCOUNTER2   |
+| VC_PERFCOUNTER3   |
+|                   |
+| PA_SU_PERFCOUNTER0|
+| PA_SU_PERFCOUNTER1|
+| PA_SU_PERFCOUNTER2|
+| PA_SU_PERFCOUNTER3|
+|                   |
+| PA_SC_PERFCOUNTER0|
+| PA_SC_PERFCOUNTER1|
+| PA_SC_PERFCOUNTER2|
+| PA_SC_PERFCOUNTER3|
+|                   |
+| HZ_PERFCOUNTER0   |
+| HZ_PERFCOUNTER1   |
+|                   |
+| TCR_PERFCOUNTER0  |
+| TCR_PERFCOUNTER1  |
+|                   |
+| TCM_PERFCOUNTER0  |
+| TCM_PERFCOUNTER1  |
+|                   |
+| TCF_PERFCOUNTER0  |
+| TCF_PERFCOUNTER1  |
+| TCF_PERFCOUNTER2  |
+| TCF_PERFCOUNTER3  |
+| TCF_PERFCOUNTER4  |
+| TCF_PERFCOUNTER5  |
+| TCF_PERFCOUNTER6  |
+| TCF_PERFCOUNTER7  |
+| TCF_PERFCOUNTER8  |
+| TCF_PERFCOUNTER9  |
+| TCF_PERFCOUNTER10 |
+| TCF_PERFCOUNTER11 |
+|                   |
+| TP0_PERFCOUNTER0  |
+| TP0_PERFCOUNTER1  |
+| TP1_PERFCOUNTER0  |
+| TP1_PERFCOUNTER1  |
+| TP2_PERFCOUNTER0  |
+| TP2_PERFCOUNTER1  |
+| TP3_PERFCOUNTER0  |
+| TP3_PERFCOUNTER1  |
+|                   |
+| SX_PERFCOUNTER0   |
+|                   |
+| BC_PERFCOUNTER0   |
+| BC_PERFCOUNTER1   |
+| BC_PERFCOUNTER2   |
+| BC_PERFCOUNTER3   |
+|                   |
+| MC0_PERFCOUNTER0  |
+| MC1_PERFCOUNTER0  |
+|                   |
+| MH_PERFCOUNTER0   |
+| MH_PERFCOUNTER1   |
+| MH_PERFCOUNTER2   |
+|                   |
+| BIF_PERFCOUNTER0  |
 
-- CP_PERFCOUNTER0
-
-- RBBM_PERFCOUNTER0
-- RBBM_PERFCOUNTER1
-
-- SQ_PERFCOUNTER0
-- SQ_PERFCOUNTER1
-- SQ_PERFCOUNTER2
-- SQ_PERFCOUNTER3
-
-- VGT_PERFCOUNTER0
-- VGT_PERFCOUNTER1
-- VGT_PERFCOUNTER2
-- VGT_PERFCOUNTER3
-
-- VC_PERFCOUNTER0
-- VC_PERFCOUNTER1
-- VC_PERFCOUNTER2
-- VC_PERFCOUNTER3
-
-- PA_SU_PERFCOUNTER0
-- PA_SU_PERFCOUNTER1
-- PA_SU_PERFCOUNTER2
-- PA_SU_PERFCOUNTER3
-
-- PA_SC_PERFCOUNTER0
-- PA_SC_PERFCOUNTER1
-- PA_SC_PERFCOUNTER2
-- PA_SC_PERFCOUNTER3
-
-- HZ_PERFCOUNTER0
-- HZ_PERFCOUNTER1
-
-- TCR_PERFCOUNTER0
-- TCR_PERFCOUNTER1
-
-- TCM_PERFCOUNTER0
-- TCM_PERFCOUNTER1
-
-- TCF_PERFCOUNTER0
-- TCF_PERFCOUNTER1
-- TCF_PERFCOUNTER2
-- TCF_PERFCOUNTER3
-- TCF_PERFCOUNTER4
-- TCF_PERFCOUNTER5
-- TCF_PERFCOUNTER6
-- TCF_PERFCOUNTER7
-- TCF_PERFCOUNTER8
-- TCF_PERFCOUNTER9
-- TCF_PERFCOUNTER10
-- TCF_PERFCOUNTER11
-
-- TP0_PERFCOUNTER0
-- TP0_PERFCOUNTER1
-- TP1_PERFCOUNTER0
-- TP1_PERFCOUNTER1
-- TP2_PERFCOUNTER0
-- TP2_PERFCOUNTER1
-- TP3_PERFCOUNTER0
-- TP3_PERFCOUNTER1
-
-- SX_PERFCOUNTER0
-
-- BC_PERFCOUNTER0
-- BC_PERFCOUNTER1
-- BC_PERFCOUNTER2
-- BC_PERFCOUNTER3
-
-- MC0_PERFCOUNTER0
-- MC1_PERFCOUNTER0
-
-- MH_PERFCOUNTER0
-- MH_PERFCOUNTER1
-- MH_PERFCOUNTER2
-
-- BIF_PERFCOUNTER0
 
 ### Shaders
 
-* [LLVM R600 Tables](https://llvm.org/viewvc/llvm-project/llvm/trunk/lib/Target/AMDGPU/R600Instructions.td)
+<!---- FIXME: Broken links --->
+* [LLVM R600 Tables](https://llvm.org/viewvc/llvm-project/llvm/trunk/lib/Target/AMDGPU/R600Instructions.pdf)
 ** The opcode formats don't match, but the name->psuedo code is correct.
-* [xemit](https://github.com/gligli/libxemit/blob/master/xemitops.c)
+* [xemit](https://github.com/gligli/libxemit/blob/3660b70443f4f5c94abccd1810d94127d42bbd20/xemitops.c)
