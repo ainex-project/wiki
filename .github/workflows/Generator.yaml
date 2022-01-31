@@ -1,4 +1,4 @@
-name: Generator
+name: MkDocs Build and Deploy
 
 on: [push]
 
@@ -11,6 +11,11 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    - name: Cache multiple paths
+      uses: actions/cache@v2
+      with:
+        path: site
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
