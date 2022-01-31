@@ -25,7 +25,17 @@
         "doc",
         "content"
       ]
-    }
+    },
+    {
+      "login": "gibbed",
+      "name": "Rick Gibbed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85170?s=40&v=4",
+      "profile": "https://gib.me/",
+      "contributions": [
+        "doc",
+        "content"
+      ]
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "xenia-wiki-temp",
