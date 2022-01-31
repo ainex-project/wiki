@@ -2,25 +2,25 @@
 
 ## How do I use Xenia?
 
-Refer to the [Quickstart page](quickstart/index.md).
+Refer to the [Quickstart page](quickstart).
 
 ## What are Xenia's system requirements?
 
-See the [Quickstart page](quickstart/system_requirements.md)
+See the [Quickstart page](quickstart/system_requirements)
 
 ## How do I fix the VCRUNTIME error?
 
-Refer to the [Quickstart page](quickstart/index.md).
+Refer to the [Quickstart page](quickstart).
 
 ## Why do I get an error saying "Your CPU does not support AVX"?
 
 Your CPU doesn't meet the minimum requirements.
 
-See the [Quickstart page](quickstart/system_requirements.md)
+See the [Quickstart page](quickstart/system_requirements)
 
 ## How do I dump games?
 
-See the guide in [Quickstart](quickstart/dumping.md).
+See the guide in [Quickstart](quickstart/dumping).
 
 ---
 
@@ -74,6 +74,13 @@ Usage: `xenia-vfs-dump [[DestinationOutput](ContainerPath])`
 ## Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/Q9mxZf9) or test it yourself.
 
+<!--- TODO(halotroop2288): Solve the dynamic compatibility tracker problem
+
+??? info "Compatibility List"
+	<iframe style="background-color: white;" src="https://azu.github.io/github-issue-widget/?owner=xenia-project&repo=game-compatibility&limit=100&state=open&label=state-playable" allowtransparency="false" frameborder="yes" scrolling="yes" width="100%"></iframe>
+
+--->
+
 ### What's the difference between Gameplay and Playable?
 Gameplay means the game reaches gameplay, even if the game is unplayable.
 
@@ -115,7 +122,7 @@ See [ROV](https://github.com/xenia-project/xenia/wiki/ROV)
 
 See the [Options page](https://github.com/xenia-project/xenia/Options).
 
-## Can Xenia run original Xbox games? =
+## Can Xenia run original Xbox games?
 
 Xenia does not support backwards compatibility, and therefore, cannot run original Xbox games.
 

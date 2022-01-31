@@ -2,7 +2,7 @@
 
 ## The JIT
 
-![JIT Diagram](images/CPU-JIT.png?raw=true)
+![JIT Diagram](/console_references/images/CPU-JIT.png)
 
 The JIT is the core of Xenia. It translates Xenon PowerPC code into native
 code runnable on the host computer.
@@ -14,12 +14,12 @@ There are 3 phases to translation:
 
 PowerPC instructions are translated to Xenia's intermediate representation
 format in src/xenia/cpu/ppc/ppc_emit_*.cc (e.g. processor control is done in
-[ppc_emit_control.cc](https://github.com/xenia-project/xenia/src/xenia/cpu/ppc/ppc_emit_control.cc)). HIR opcodes
+[ppc_emit_control.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_emit_control.cc)). HIR opcodes
 are relatively simple opcodes such that any host can define an implementation.
 
 After the HIR is generated, it is ran through a compiler to prep it for generation.
 The compiler is ran in a series of passes, the order of which is defined in
-[ppc_translator.cc](https://github.com/xenia-project/xenia/src/xenia/cpu/ppc/ppc_translator.cc). Some passes are
+[ppc_translator.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_translator.cc). Some passes are
 essential to the successful generation, while others are merely for optimization
 purposes. Compiler passes are defined in src/xenia/cpu/compiler/passes with
 descriptive class names.
@@ -27,7 +27,7 @@ descriptive class names.
 Finally, the backend consumes the HIR and emits code that runs natively on the
 host. Currently, the only backend that exists is the x64 backend, with all the
 emission done in
-[x64_sequences.cc](https://github.com/xenia-project/xenia/src/xenia/cpu/backend/x64/x64_sequences.cc).
+[x64_sequences.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_sequences.cc).
 
 ## ABI
 
@@ -38,12 +38,12 @@ guest code.
 
 ### x64
 
-Transition thunks defined in [x64_backend.cc](https://github.com/xenia-project/xenia/src/xenia/cpu/backend/x64/x64_backend.cc#L389).
-Registers are stored on the stack as defined by [StackLayout::Thunk](https://github.com/xenia-project/xenia/src/xenia/cpu/backend/x64/x64_stack_layout.h#L96)
+Transition thunks defined in [x64_backend.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_backend.cc#L389).
+Registers are stored on the stack as defined by [StackLayout::Thunk](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_stack_layout.h#L91)
 for later transitioning back to the host.
 
 Some registers are reserved for usage by the JIT to store temporary variables.
-See: [X64Emitter::gpr_reg_map_ and X64Emitter::xmm_reg_map_](https://github.com/xenia-project/xenia/src/xenia/cpu/backend/x64/x64_emitter.cc#L57).
+See: [X64Emitter::gpr_reg_map_ and X64Emitter::xmm_reg_map_](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_emitter.cc#L61).
 
 #### Integer Registers
 
@@ -129,7 +129,7 @@ instructions, though, which are only documented in a few places (like the gcc so
 * [PowerPC Programming Environments Manual](https://web.archive.org/web/20141028181028/https://www-01.ibm.com/chips/techlib/techlib.nsf/techdocs/F7E732FF811F783187256FDD004D3797/$file/pem_64bit_v3.0.2005jul15.pdf) (aka 'pem_64')
 * [PowerPC Vector PEM](https://web.archive.org/web/20130502201029/https://www-01.ibm.com/chips/techlib/techlib.nsf/techdocs/C40E4C6133B31EE8872570B500791108/$file/vector_simd_pem_v_2.07c_26Oct2006_cell.pdf)
 * [AltiVec PEM](https://web.archive.org/web/20151110180336/https://cache.freescale.com/files/32bit/doc/ref_manual/ALTIVECPEM.pdf)
-* [VMX128 Opcodes](http://biallas.net/doc/vmx128/vmx128.txt)
+* [VMX128 Opcodes](/console_references/documents/ppc/vmx128.txt)
 * [AltiVec Decoding](https://github.com/kakaroto/ps3ida/blob/master/plugins/PPCAltivec/src/main.cpp)
 
 ### x64

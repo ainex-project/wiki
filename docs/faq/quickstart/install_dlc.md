@@ -17,5 +17,5 @@ This can be identified by running the game in Xenia.
 to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
 	![Image](images/e4zk397.png)
 
-!!! note "Next section..."
-	[Activating Games and DLCs](activate_games.md)
+!!! success "Next section..."
+	[Activating Games and DLCs](activate_games)

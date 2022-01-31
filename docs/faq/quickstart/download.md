@@ -8,5 +8,5 @@ Xenia Canary is a fork of Xenia with changes not present in master.
 
 For more information: *[What is the difference between Xenia Canary and Xenia master?](https://github.com/xenia-canary/xenia-canary/wiki/FAQ#what-is-the-difference-between-xenia-canary-and-xenia-master)*
 
-!!! info "Next section..."
-	- [How to Dump Games](dumping.md)
+!!! success "Next section..."
+	- [How to Dump Games](dumping)

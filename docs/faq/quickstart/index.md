@@ -7,7 +7,7 @@ how to install it, and how to dump games for use in Xenia.
 
 !!! info "See also:"
 	- Already know how to use Xenia? Want to help out? Check out the [Xenia contribution guide](/development).
-	- Want to contribute to the wiki? Check out the [wiki contribution guide]().
+	- Want to contribute to the wiki? Check out the [wiki contribution guide](/meta/contributing.md).
 
-!!! info "Next section...."
-	- [System Requirements](system_requirements.md)
+!!! success "Next section...."
+	- [System Requirements](system_requirements)

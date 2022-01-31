@@ -20,25 +20,25 @@ Before beginning, you need to check if the USB is formatted:
 
 > Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png)*
 
-??? note "Settings > System:"
+??? info "Settings > System:"
 	![Image](images/xcCn6fM.png)
 
-??? note "Storage:"
+??? info "Storage:"
 	![Image](images/No4y9xi.png)
 
 2. If you see an [Unformatted](https://i.imgur.com/Jex2sln.png) storage device, select it.
 Image (click to expand)
 
-??? note "Unformatted:"
+??? info "Unformatted:"
 	![Image](images/Jex2sln.png)
 
 * If it's already formatted, skip this section.
 3. [Press A to format](https://i.imgur.com/tIW9spr.png)
 4. [Select Yes](https://i.imgur.com/rKvf04S.png)
 
-??? note "Press A to format:"
+??? info "Press A to format:"
 	![Image](images/tIW9spr.png)
-??? note "Select Yes:"
+??? info "Select Yes:"
 	![Image](images/rKvf04S.png)
 !!! warning "**This will erase everything from the drive. Make sure to move the files off of it first!**"
 5. Once done, return to home by pressing B twice.
@@ -50,16 +50,16 @@ Image (click to expand)
 You'll want to change these options to stop game(s) from automatically starting:
 > *[Settings > System](images/xcCn6fM.png) > [Console Settings](images/FStw2Y7.png) > [Auto-Play](images/r4lLczk.png) > [Disable](images/V5oEdQl.png)*
 
-??? note "Settings > System:"
+??? info "Settings > System:"
 	![Settings > System](images/xcCn6fM.png)
 
-??? note "Console Settings:"
+??? info "Console Settings:"
 	![Console Settings](images/FStw2Y7.png)
 
-??? note "Auto-Play:"
+??? info "Auto-Play:"
 	![Auto-Play](images/r4lLczk.png)
 
-??? not "Disable:"
+??? info "Disable:"
 	![Disable](images/V5oEdQl.png)
 
 > *[Settings > System](images/xcCn6fM.png) > [Console Settings](images/FStw2Y7.png) > [Startup and Shutdown](images/DgblBFS.png) > [Startup](images/GJpqOrH.png) > [Xbox Dashboard](images/H4ffGAV.png)*
@@ -73,10 +73,10 @@ You'll want to change these options to stop game(s) from automatically starting:
 ??? "Startup and Shutdown:"
 	![Image](images/DgblBFS.png)
 
-??? note "Startup:"
+??? info "Startup:"
 	![Image](images/GJpqOrH.png)
 
-??? note "Xbox Dashboard:"
+??? info "Xbox Dashboard:"
 	![Image](images/H4ffGAV.png)
 
 1. Go to home on the dashboard
@@ -100,27 +100,27 @@ You'll want to change these options to stop game(s) from automatically starting:
 1. Go to *[Settings > System](images/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png) > [Hard Drive](https://i.imgur.com/8EB0EFr.png) > [Press Y (Device Options)](https://i.imgur.com/rRaoeAR.png) > [Transfer Content](https://i.imgur.com/wdvYqDR.png) > [USB Storage Device](https://i.imgur.com/6FVly57.png)*
 4. Choose what you want to transfer. Keep in mind full games and trials/demos are in separate categories.
 
-??? note "Settings > System:"
+??? info "Settings > System:"
 	![Image](images/xcCn6fM.png)
 
-??? note "Storage:"
+??? info "Storage:"
 	![Image](images/No4y9xi.png)
 
-??? note "Hard Drive:"
+??? info "Hard Drive:"
 	![Image](images/8EB0EFr.png)
 
-??? note "Press Y (Device Options):"
+??? info "Press Y (Device Options):"
 	![Image](images/rRaoeAR.png)
 
-??? note "Transfer Content:"
+??? info "Transfer Content:"
 	![Image](images/wdvYqDR.png)
 
-??? note "USB Storage Device:"
+??? info "USB Storage Device:"
 	![Image](images/6FVly57.png)
 
 > Press right, then *[Start](images/Gpb5Zya.png)*.
 
-??? note "Start:"
+??? info "Start:"
 	![Image](images/Gpb5Zya.png)
 
 Once it's done you can take the USB out of the console.
@@ -152,9 +152,9 @@ Once it's done you can take the USB out of the console.
       * If the game is extracted you will need to drag `default.xex` onto Xenia.
       * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
-!!! note "See also"
+!!! info "See also"
 	[Redump Xbox and Xbox 360 dumping guide](http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide)
 
-!!! note "Next section..."
-	- [Installing DLCs](install_dlc.md)
-	- [Activating Licenses (DLCs and Trials)](activate_games.md)
+!!! success "Next section..."
+	- [Installing DLCs](install_dlc)
+	- [Activating Licenses (DLCs and Trials)](activate_games)

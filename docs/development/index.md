@@ -4,7 +4,7 @@ So, you want to contribute to Xenia's development?
 Here are the steps you'll need to take to get started:
 
 - Have a computer capable of running Xenia, and install the required system components:
-	- See [System Requirements](/faq/quickstart/system_requirements.md)
+	- See [System Requirements](/faq/quickstart/system_requirements)
 - Learn the language<br/>
 	- An often overlooked aspect to newcomers is having an understanding of the language the project is written in.<br/>
 	Xenia uses [C++ 17](https://en.wikipedia.org/wiki/C%2B%2B17) for development.
@@ -12,9 +12,9 @@ Here are the steps you'll need to take to get started:
 	but it may take a while to get a full grasp of it.<br/>
 	- In addition, to submit your contributions, you'll need to know how to use [Git](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F).
 		- Here is a [crash course](https://www.youtube.com/watch?v=SWYqp7iY_Tc) on Git to help you out.
-- Learn to [build Xenia from source](building.md)<br/>
+- Learn to [build Xenia from source](building)<br/>
 	This step should give you all you need to start developing Xenia with Visual Studio on Windows or Codelite on Linux.
-- Follow the [style guide](style_guide.md)<br/>
+- Follow the [style guide](style_guide)<br/>
 	Run `xb format` before creating a pull request.
 
 When you're ready, fork Xenia on GitHub, and push your changes. Then create a pull request on GitHub.

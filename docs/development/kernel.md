@@ -8,7 +8,7 @@ their place, then lookup a kernel export and link it to each import. The JIT wil
 generate a sequence of instructions to call into Xenia's export if it encounters a syscall.
 
 Currently, there are two ways an export can be defined -
-[for example](https://github.com/xenia-project/xenia/src/xenia/kernel/xboxkrnl/xboxkrnl_audio.cc):
+[for example](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_audio.cc):
 * `SHIM_CALL XAudioGetSpeakerConfig_shim(PPCContext* ppc_context, KernelState* kernel_state)`
 * `dword_result_t XAudioGetSpeakerConfig(lpdword_t config_ptr)`
 
@@ -18,7 +18,7 @@ registers. Function parameters are fetched from r3...r10 (`SHIM_GET_ARG_32`), an
 additional parameters are loaded from the stack. The return value (if there is one)
 is stored in r3 (`SHIM_SET_RETURN_32`).
 
-Details on how calls transition from guest -> host can be found in the [cpu documentation](cpu.md).
+Details on how calls transition from guest -> host can be found in the [cpu documentation](../cpu).
 
 The newer convention does the same, but uses templates to automate the process
 of loading arguments and setting a return value.
