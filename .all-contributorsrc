@@ -1,0 +1,46 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "halotroop2288",
+      "name": "Caroline Joy Bell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30361266?v=4",
+      "profile": "http://halotroop.com",
+      "contributions": [
+        "doc",
+        "content",
+        "design"
+      ]
+    },
+    {
+      "login": "Margen67",
+      "name": "Margen67",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3462541?v=4",
+      "profile": "https://github.com/Margen67",
+      "contributions": [
+        "doc",
+        "content"
+      ]
+    },
+    {
+      "login": "gibbed",
+      "name": "Rick Gibbed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85170?s=40&v=4",
+      "profile": "https://gib.me/",
+      "contributions": [
+        "doc",
+        "content"
+      ]
+    },
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "xenia-wiki-temp",
+  "projectOwner": "halotroop2288",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
