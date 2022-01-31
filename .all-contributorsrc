@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "halotroop2288",
+      "name": "Caroline Joy Bell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30361266?v=4",
+      "profile": "http://halotroop.com",
+      "contributions": [
+        "doc",
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "xenia-wiki-temp",
+  "projectOwner": "halotroop2288",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
