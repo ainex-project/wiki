@@ -16,9 +16,10 @@ You'll need MkDocs installed locally via Python to test your changes.
 2. [MkDocs](https://www.mkdocs.org/), and [mkdocs-material](https://squidfunk.github.io/mkdocs-material/):
   - Run `python -m pip install mkdocs mkdocs-material` in your command prompt
 
+
 ## Instructions
 
--  If this is your first time contributing, be sure to read the entire page before you begin.
+-   If this is your first time contributing, be sure to read the entire page before you begin.
 
 1.  Clone the [repo](https://github.com/xenia-project/wiki) and open it in your favorite editor.
 
@@ -35,6 +36,7 @@ You'll need MkDocs installed locally via Python to test your changes.
 
 5.  Submit a pull request to [the wiki repo](https://github.com/xenia-project/wiki/compare)
 
+
 ## Testing
 
 To serve your copy of the website for testing:
@@ -49,9 +51,15 @@ To serve your copy of the website for testing:
      Links to documents on this Wiki must have extensions.
      Articles on the wiki are do not need `.md` extensions (except in `mkdocs.yml`).
 
+
 ## Guidelines
 
 1.	***Never*** attach files or links to content that is private to another party.<br/>
 	This includes leaked documentation, piracy websites and other pirated content.
 2.	If you attach a link to code on :github: GitHub in your article, make sure to get the *permalink.*<br/>
 	Attaching links to branches (such as master/main) leads to dead or incorrect links down the road!
+
+
+## Tips
+
+-  [Emoji and Icons search and documentation](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#using-icons-in-templates)

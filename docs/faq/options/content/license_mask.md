@@ -1,7 +1,4 @@
 <!--- This file is a snippet --->
-
-#### Run games as full/activated
-
 |**license_mask**                           |  **#**  |
 |:------------------------------------------|:-------:|
 | Deactivated/trial/demo mode (*default*)   |    0    |
