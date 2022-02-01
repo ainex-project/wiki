@@ -1,6 +1,6 @@
 # Home
 
-Welcome to the **Xenia Wiki** - the primary source of documentation for Xenia.
+Welcome to the :xenia:**Xenia Wiki** - the primary source of documentation for Xenia.
 
 !!! info "[Game Compatibility](https://github.com/xenia-project/game-compatibility/issues)"
     [=12/1507 "Nothing"]
@@ -17,7 +17,7 @@ Welcome to the **Xenia Wiki** - the primary source of documentation for Xenia.
     Please see [README.md](https://github.com/xenia-project/wiki/blob/master/README.md) for details on hosting the docs locally and contributing.
 
 !!! info "Helpful Links"
-	- [Quickstart Guide (Start Here!)](faq/quickstart/)
-	- [Frequently Asked Questions](faq/)
-	- [Developer Guide](development/)
+    - [Quickstart Guide (Start Here!)](faq/quickstart/)
+    - [Frequently Asked Questions](faq/)
+    - [Developer Guide](development/)
 

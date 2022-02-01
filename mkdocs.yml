@@ -40,6 +40,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.tasklist
+  - pymdownx.keys
   - pymdownx.magiclink:
       user: xenia-project
       repo: wiki
@@ -84,6 +85,7 @@ nav:
         - Render Target Path: faq/options/gpu/render_target_path_d3d12.md
         - Vsync: faq/options/gpu/vsync.md
       - HID:
+        - HID WinKey: faq/options/hid/winkey/winkey.md
         - Input Backend: faq/options/hid/hid.md
       - Memory:
         - Protect Zero: faq/options/memory/protect_zero.md
