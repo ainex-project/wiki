@@ -12,7 +12,7 @@ Welcome to the :xenia:**Xenia Wiki** - the primary source of documentation for X
     Use tabs in header for navigation
 
 !!! info "Open Source"
-    This site is Open Source and licensed under LICENSE. <!--- DISCUSSION NEEDED --->
+    This site is Open Source and licensed under LICENSE. <!--- https://github.com/xenia-project/wiki/issues/1 --->
     The source (as Markdown) is [hosted on GitHub](https://github.com/xenia-project/wiki).
     Please see [README.md](https://github.com/xenia-project/wiki/blob/master/README.md) for details on hosting the docs locally and contributing.
 
