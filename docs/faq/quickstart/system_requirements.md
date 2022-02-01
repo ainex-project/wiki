@@ -3,23 +3,23 @@
 **Meeting recommended specifications won't guarantee perfect performance.**
 
 ??? info "How to find relevant specs in [Speccy](https://www.ccleaner.com/speccy) on Windows"
-	On the first page, you'll find your operating system, CPU, GPU, and amount of RAM.
-	![Use Speccy to find OS, CPU, RAM, and GPU](images/speccy_1.png)
-	On the CPU page, you'll find your CPU instruction extensions. (Look for `AVX2`)
-	![Use Speccy to find CPU extension support](images/speccy_2.png)
+    On the first page, you'll find your operating system, CPU, GPU, and amount of RAM.
+    ![Use Speccy to find OS, CPU, RAM, and GPU](images/speccy_1.png)
+    On the CPU page, you'll find your CPU instruction extensions. (Look for `AVX2`)
+    ![Use Speccy to find CPU extension support](images/speccy_2.png)
 
 <!--- TODO(halotroop2288)
 ??? info "How to find relevant specs on Linux"
-	1.	Enter [this command](https://www.howtoforge.com/linux-lscpu-command/) on the command line to see information about your CPU:
-		```sh
-		lscpu
-		```
-		You're looking for the Model name, and `avx2` under Flags.
-	2.	Enter [this command](https://www.tutorialspoint.com/unix_commands/lspci.htm) to see information about your gpu.
-		```sh
-		lspci
-		```
-		The first line should say the name of your graphics device.
+    1.    Enter [this command](https://www.howtoforge.com/linux-lscpu-command/) on the command line to see information about your CPU:
+        ```sh
+        lscpu
+        ```
+        You're looking for the Model name, and `avx2` under Flags.
+    2.    Enter [this command](https://www.tutorialspoint.com/unix_commands/lspci.htm) to see information about your gpu.
+        ```sh
+        lspci
+        ```
+        The first line should say the name of your graphics device.
 --->
 
 ## Recommended:
@@ -53,9 +53,9 @@ if one is not detected. Make sure that you have the latest drivers installed. **
 ***OpenGL and Direct3D11 or lower are not, and never will be supported.***
 
 Windows Update tends to lag behind, so download GPU drivers from your manufacturer:
-	- **[AMD](https://www.amd.com/en/support)**
-	- **[NVIDIA](https://www.nvidia.com/Download/index.aspx)**
-	- **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
+    - **[AMD](https://www.amd.com/en/support)**
+    - **[NVIDIA](https://www.nvidia.com/Download/index.aspx)**
+    - **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
 
 !!! success "Next section..."
-	- [Where to Download Xenia](download)
+    - [Where to Download Xenia](download)

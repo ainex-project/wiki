@@ -10,7 +10,7 @@ If you would like to contribute to the project, you've come to the right place. 
 <!--- TODO(halotroop2288) --->
 
 !!! info "Want to contribute to the wiki?"
-	[See the contribution guide](contributing)
+    [See the contribution guide](contributing)
 
 ## Contributors ✨
 

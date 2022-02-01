@@ -1,20 +1,23 @@
 name: MkDocs Build and Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/cache@v2
-      with:
-        path: site
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.x
+    - uses: actions/cache@v2
+      with:
+        key: ${{ github.ref }}
+        path: .cache
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip

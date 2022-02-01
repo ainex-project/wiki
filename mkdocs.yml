@@ -19,6 +19,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Poppins
+    code: Jetbrains Mono
   features:
     - navigation.instant
     - navigation.tabs
@@ -85,8 +88,8 @@ nav:
         - Render Target Path: faq/options/gpu/render_target_path_d3d12.md
         - Vsync: faq/options/gpu/vsync.md
       - HID:
-        - HID WinKey: faq/options/hid/winkey/winkey.md
         - Input Backend: faq/options/hid/hid.md
+        - HID WinKey: faq/options/hid/winkey/winkey.md
       - Memory:
         - Protect Zero: faq/options/memory/protect_zero.md
       - XConfig:
