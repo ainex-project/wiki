@@ -77,7 +77,7 @@ Check the [compatibility list](https://github.com/xenia-project/game-compatibili
 <!--- TODO(halotroop2288): Solve the dynamic compatibility tracker problem
 
 ??? info "Compatibility List"
-	<iframe style="background-color: white;" src="https://azu.github.io/github-issue-widget/?owner=xenia-project&repo=game-compatibility&limit=100&state=open&label=state-playable" allowtransparency="false" frameborder="yes" scrolling="yes" width="100%"></iframe>
+    <iframe style="background-color: white;" src="https://azu.github.io/github-issue-widget/?owner=xenia-project&repo=game-compatibility&limit=100&state=open&label=state-playable" allowtransparency="false" frameborder="yes" scrolling="yes" width="100%"></iframe>
 
 --->
 

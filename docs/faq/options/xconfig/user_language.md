@@ -1,20 +1,20 @@
 <!--- This file is a snippet --->
 
-| **user_language**				           	|**#**|
-|:-----------------------------------------|:---:|
-| EN (English, *default*)			        |  1  |
-| JA (Japanese/日本語)				        |  2  |
-| DE (German/Deutsche)				        |  3  |
-| FR (French/Français)			 	        |  4  |
-| ES (Spanish/Español)			 	        |  5  |
-| IT (Italian/Italiano)			 	        |  6  |
-| KO (Korean/한국어)			 	        |  7  |
-| ZH (Traditional Chinese/繁體中文)	        |  8  |
-| PT (Portuguese/Português)			        |  9  |
-| PL (Polish/Polski)				        |  10 |
-| RU (Russian/русский)				        |  11 |
-| SV (Swedish/Svenska)				        |  12 |
-| TR (Turkish/Türk)					        |  13 |
-| NB (Norwegian/Norsk)				        |  14 |
-| NL (Dutch/Nederlands)				        |  15 |
-| ZH (Simplified Chinese/简体中文)	        |  16 |
+| **user_language**  |**#**|**region code**|**native name**|
+|:-------------------|:---:|:-------------:|:-------------:|
+| English (*default*)|  1  | EN            | English       |
+| Japanese           |  2  | JA            | 日本語         |
+| German             |  3  | DE            | Deutsche      |
+| French             |  4  | FR            | Français      |
+| Spanish            |  5  | ES            | Español       |
+| Italian            |  6  | IT            | Italiano      |
+| Korean             |  7  | KO            | 한국어        |
+| Traditional Chinese|  8  | ZH            | 繁體中文      |
+| Portuguese         |  9  | PT            | Português     |
+| Polish             |  10 | PL            | Polski        |
+| Russian            |  11 | RU            | русский       |
+| Swedish            |  12 | SV            | Svenska       |
+| Turkish            |  13 | TR            | Türk          |
+| Norwegian          |  14 | NB            | Norsk         |
+| Dutch              |  15 | NL            | Nederlands    |
+| Simplified Chinese |  16 | ZH            | 简体中文      |

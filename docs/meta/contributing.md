@@ -26,9 +26,9 @@ You'll need MkDocs installed locally via Python to test your changes.
 2.  If your editor creates editor-specific files, add them to the `.gitignore` file.
 
 3.  Write your article using Markdown. The many features of Markdown extensions can be found in the links below.
-	If you'd like to use a Markdown extension not listed in [mkdocs.yml](https://github.com/xenia-project/wiki/blob/main/mkdocs.yml),
-	you may add them to the list. You should ensure compatibility with other articles (so their layout does not
-	accidentally change) before your changes are merged.
+    If you'd like to use a Markdown extension not listed in [mkdocs.yml](https://github.com/xenia-project/wiki/blob/main/mkdocs.yml),
+    you may add them to the list. You should ensure compatibility with other articles (so their layout does not
+    accidentally change) before your changes are merged.
 	- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
 	- [MkDocs Material Extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions)
 
