@@ -20,4 +20,5 @@ Welcome to the :xenia:**Xenia Wiki** - the primary source of documentation for X
     - [Quickstart Guide (Start Here!)](faq/quickstart/)
     - [Frequently Asked Questions](faq/)
     - [Developer Guide](development/)
+    - [Contribute to the Wiki](meta/contributing.md)
 
