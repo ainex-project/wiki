@@ -8,12 +8,12 @@ Modifiers may be added in front of key identifiers to change the meaning of a bi
 - [Virtual-Key Codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) (hex)
 - A character corresponding to a key
 
-Key modifiers are:
+## Key modifiers
 
-|**Modifier**|**Meaning**        |
-|:-----------|:-----------------:|
-|`_`         |only with Caps Lock|
-|`^`         |only with Shift    |
+|**Modifier**|**Meaning**                     |
+|:-----------|:------------------------------:|
+|`_`         |only with ++cplk++ enabled      |
+|`^`         |only while ++shift++ is pressed |
 
 ## Examples
 
