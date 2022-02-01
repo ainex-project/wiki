@@ -17,18 +17,18 @@ Modifiers may be added in front of key identifiers to change the meaning of a bi
 
 ## Examples
 
-|**Setting and Value**       |**Meaning**                                                                   |
-|:---------------------------|:----------------------------------------------------------------------------:|
-|`keybind_a = "0xBA"`        |Bind the :xbox-a_button: button to ++semicolon++                              |
-|`keybind_x = "X"`           |Bind the :xbox-x_button: button to ++x++                                      |
-|`keybind_y = "Y U 0xA0"`    |Bind the :xbox-y_button: button to ++y++, ++x++ and ++lshift++                |
-|`keybind_b = "_0xBA"`       |Bind the :xbox-b_button: button to ++semicolon++ only when ++cplk++ is enabled|
-|`keybind_dpad_up = "^X"`    |Bind the :xbox-dpad_up: button to ++shift+x++                                 |
+|**Setting and Value**       |**Meaning**                                                         |
+|:---------------------------|:-------------------------------------------------------------------|
+|`keybind_a = "0xBA"`        |Bind :xbox-a_button: to ++semicolon++                               |
+|`keybind_x = "X"`           |Bind :xbox-x_button: to ++x++                                       |
+|`keybind_y = "Y U 0xA0"`    |Bind :xbox-y_button: to ++y++, ++x++ and ++lshift++                 |
+|`keybind_b = "_0xBA"`       |Bind :xbox-b_button: to ++semicolon++ only when ++cplk++ is enabled |
+|`keybind_dpad_up = "^X"`    |Bind :xbox-dpad_up: to ++shift+x++                                  |
 
 ## Default bindings
 
 |**Setting Name**         |**Default Value**|**Meaning**                                                   |
-|:------------------------|:---------------:|:------------------------------------------------------------:|
+|:------------------------|:---------------:|:-------------------------------------------------------------|
 |keybind_a                |0xBA             |Bind :xbox-a_button: to ++semicolon++                         |
 |keybind_b                |0xDE             |Bind :xbox-b_button: to ++dblquote++                          |
 |keybind_back             |Z                |Bind :xbox-back_button: to ++z++                              |
