@@ -1,5 +1,4 @@
 <!--- This file is a snippet --->
-
 Horizontal Scale
 
 |**draw_resolution_scale_x**|**#**|

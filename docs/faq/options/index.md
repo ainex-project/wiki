@@ -58,6 +58,8 @@ Expand a section by clicking it to see the table.
 	--8<-- "docs/faq/options/hid/hid.md"
 
 ### HID WinKey
+??? info "Windows Key Bindings"
+	--8<-- "docs/faq/options/hid/winkey/winkey.md"
 ## Kernel
 ## Logging
 ## Memory
