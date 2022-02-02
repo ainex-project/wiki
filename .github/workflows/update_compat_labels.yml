@@ -1,0 +1,31 @@
+name: Update State Labels
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Current Branch
+        uses: actions/checkout@v2
+      - name: Query API for Labels
+        uses: octokit/graphql-action@v2.2.1
+        id: query_api_for_labels
+        with:
+          query: |
+            {
+              repository(owner: "xenia-project", name: "game-compatibility") {
+                labels(first: 100) {
+                  nodes {
+                    name
+                    color
+                  }
+                  pageInfo {
+                    hasNextPage
+                    endCursor
+                  }
+                }
+              }
+            }
+      - run: "echo '${{ steps.query_api_for_labels.outputs.data }}'"
