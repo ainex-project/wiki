@@ -28,4 +28,6 @@ jobs:
                 }
               }
             }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: "echo '${{ steps.query_api_for_labels.outputs.data }}'"
