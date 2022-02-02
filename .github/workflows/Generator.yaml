@@ -17,14 +17,11 @@ jobs:
     - uses: actions/cache@v2
       with:
         key: ${{ github.ref }}
-        path: .cache
+        path: site
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install mkdocs mkdocs-material
-    - name: Cleanup files
-      run: |
-        rm -rf site
     - name: Build static files
       run: |
         mkdocs build
