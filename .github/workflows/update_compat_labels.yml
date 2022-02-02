@@ -2,21 +2,21 @@ name: Update State Labels
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Current Branch
-        uses: actions/checkout@v2
-      - name: Query API for Labels
-        uses: octokit/graphql-action@v2.2.1
-        id: query_api_for_labels
-        with:
-          query: |
-            {
+      - uses: actions/checkout@v2
+      - name: Get compatibility labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: | #nodes[]
+          labels=$(gh api graphql --paginate --jq '.data.repository.labels' -f query='
+            query($endCursor: String) {
               repository(owner: "xenia-project", name: "game-compatibility") {
-                labels(first: 100) {
+                labels(first:100, after:$endCursor) {
                   nodes {
                     name
                     color
@@ -28,6 +28,5 @@ jobs:
                 }
               }
             }
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo '${{ steps.query_api_for_labels.outputs.data }}'"
+          ')
+          echo "$labels"
