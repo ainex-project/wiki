@@ -1,6 +1,7 @@
 # Home
 
-Welcome to the :xenia:**Xenia Wiki** - the primary source of documentation for Xenia.
+Welcome to the :xenia:**Xenia Wiki** - the primary source of documentation for Xenia,
+an experimental Xbox 360 emulator.
 
 !!! info "[Game Compatibility](https://github.com/xenia-project/game-compatibility/issues)"
     [=12/1507 "Nothing"]

@@ -8,6 +8,7 @@
     ### For testing
 
     You'll need MkDocs installed locally via Python to test your changes.
+
     1. [Python 3.7+](https://www.python.org/downloads/)
       - Ensure Python gets added to your PATH
 
@@ -52,7 +53,7 @@
 ## Guidelines
 
 1. ***Never*** attach files or links to content that is private to another party.<br/>
-   This includes leaked documentation, piracy websites and other pirated content.
+   This includes leaked documentation (such as the XDK), piracy websites and other pirated content.
 2. If you attach a link to code on :material-github:GitHub in your article, make sure to get the *permalink.*<br/>
    Attaching links to branches (such as master/main) leads to dead or incorrect links down the road!
 
@@ -61,13 +62,20 @@
 
 Stumped on how to do something? These resources might help!
 
+- [MkDocs Material Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+  Explains the setup of MkDocs Material sites, such as fonts, colors, and [navigation].
 - [MkDocs Material Reference](https://squidfunk.github.io/mkdocs-material/reference/)<br/>
   Includes details about the features of MkDocs Material, the theme used by Xenia Wiki.
-  Want to know how to use features like tables, buttons, and diagrams? It's all in there.
-- [Emoji and Icons search and documentation](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis)
+  Want to know how to use features like emoji, tables, buttons, and diagrams? It's all in there.
 - [Xenia Discord](https://discord.gg/Q9mxZf9)<br/>
   Talking to developers may give you ideas for documentation.<br/>
   The `#dev-references` channel may have additional references to add to the wiki.
+
+### Tools
+- [Xenia](/faq/quickstart/download) - You'll probably need it!
+- [Lightshot](https://app.prntscr.com/en/index.html) - An easy screenshot program for Windows and Mac<br/>
+  Has a few more features than Snipping Tool, including automatic upload and a dedicated screenshot hotkey.
+- [Flameshot](https://flameshot.org/) - Almost the same as Lightshot, but on Linux!
 
 ### Suggestions
 
@@ -77,3 +85,4 @@ Stumped on how to do something? These resources might help!
 Although Xenia itself does not yet support multiple languages, the wiki can!
 If you would like to translate the wiki to your language, [start here!](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector)
 
+[navigation]:https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
