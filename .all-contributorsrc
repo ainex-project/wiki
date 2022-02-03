@@ -27,6 +27,15 @@
         "content",
         "code"
       ]
+    },
+    {
+      "login": "BillieBlueberry",
+      "name": "Billie",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45376047?v=4",
+      "profile": "https://github.com/BillieBlueberry",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 5,
