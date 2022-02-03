@@ -20,24 +20,9 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-*/
+ */
 
-// TODO(halotroop2288): Parse these from JSON file
-var labels = ['state-playable', 'state-nothing', 'state-load', 'state-title', 'state-menus', 'state-gameplay',
-  'state-hang', 'state-crash-OBSELETE', 'state-intro', 'state-crash-guest', 'state-crash-host', 'state-crash-xna-WONTFIX'];
-var labelColors = ['#22bb22', '#880000', '#ff9999', '#ee6633', '#fbca04', '#99aa00', '#BB0000', '#bb0000', '#ff3300',
-  '#bb0000', '#bb0000', '#bb0000'];
+const file = require('./compatibility.json');
 
-var tds, text, color, label;
-tds=document.getElementsByTagName('td');
-
-// Someone clever could give the labels column an html id and get the td via that instead of using this for loop
-for (i=0; i < tds.length; i++) {
-  td = tds[i];
-  text = td.innerText;
-  for (l=0; l < labels.length; l++) {
-    if ( text.includes(labels[l]) ) {
-      td.style.border = "inset " + labelColors[l];
-    }
-  }
-}
+console.log(typof file);
+console.log(file);

@@ -29,7 +29,8 @@ theme:
 extra_css:
     - css/progress_bars.css
 extra_javascript:
-    - javascripts/compatibiltiy_list.js
+    - javascripts/compatibility_colors.js
+    - javascripts/compatibility_list.js
 strict: true
 markdown_extensions:
   - admonition
@@ -106,11 +107,13 @@ nav:
     - Style Guide: development/style_guide.md
     - Instruction Tracing: development/instruction_tracing.md
     - 360 Documentation:
+      - development/console-docs/index.md
       - Hardware:
-        - CPU: development/cpu.md
-        - CPU To-Do: development/cpu_todo.md
-        - GPU: development/gpu.md
-      - Kernel: development/kernel.md
+        - CPU: development/console-docs/cpu.md
+        - CPU To-Do: development/console-docs/cpu_todo.md
+        - GPU: development/console-docs/gpu.md
+      - Kernel: development/console-docs/kernel.md
+  - 360 References: console-refs/index.md
   - Wiki:
     - meta/index.md
     - Contribution Guide: meta/contributing.md
