@@ -19,12 +19,17 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Poppins
+    code: Jetbrains Mono
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.indexes
 extra_css:
     - css/progress_bars.css
+extra_javascript:
+    - javascripts/compatibiltiy_list.js
 strict: true
 markdown_extensions:
   - admonition
@@ -32,7 +37,11 @@ markdown_extensions:
   - md_in_html
   - pymdownx.highlight
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.caret
   - pymdownx.mark
@@ -40,6 +49,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.tasklist
+  - pymdownx.keys
   - pymdownx.magiclink:
       user: xenia-project
       repo: wiki
@@ -50,6 +60,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - extras
   - pymdownx.highlight:
       anchor_linenums: true
 nav:
@@ -82,6 +95,7 @@ nav:
         - Vsync: faq/options/gpu/vsync.md
       - HID:
         - Input Backend: faq/options/hid/hid.md
+        - HID WinKey: faq/options/hid/winkey/winkey.md
       - Memory:
         - Protect Zero: faq/options/memory/protect_zero.md
       - XConfig:

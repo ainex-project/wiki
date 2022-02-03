@@ -21,25 +21,25 @@ Before beginning, you need to check if the USB is formatted:
 > Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png)*
 
 ??? info "Settings > System:"
-	![Image](images/xcCn6fM.png)
+    ![Image](images/xcCn6fM.png)
 
 ??? info "Storage:"
-	![Image](images/No4y9xi.png)
+    ![Image](images/No4y9xi.png)
 
 2. If you see an [Unformatted](https://i.imgur.com/Jex2sln.png) storage device, select it.
 Image (click to expand)
 
 ??? info "Unformatted:"
-	![Image](images/Jex2sln.png)
+    ![Image](images/Jex2sln.png)
 
 * If it's already formatted, skip this section.
 3. [Press A to format](https://i.imgur.com/tIW9spr.png)
 4. [Select Yes](https://i.imgur.com/rKvf04S.png)
 
 ??? info "Press A to format:"
-	![Image](images/tIW9spr.png)
+    ![Image](images/tIW9spr.png)
 ??? info "Select Yes:"
-	![Image](images/rKvf04S.png)
+    ![Image](images/rKvf04S.png)
 !!! warning "**This will erase everything from the drive. Make sure to move the files off of it first!**"
 5. Once done, return to home by pressing B twice.
 
@@ -51,33 +51,33 @@ You'll want to change these options to stop game(s) from automatically starting:
 > *[Settings > System](images/xcCn6fM.png) > [Console Settings](images/FStw2Y7.png) > [Auto-Play](images/r4lLczk.png) > [Disable](images/V5oEdQl.png)*
 
 ??? info "Settings > System:"
-	![Settings > System](images/xcCn6fM.png)
+    ![Settings > System](images/xcCn6fM.png)
 
 ??? info "Console Settings:"
-	![Console Settings](images/FStw2Y7.png)
+    ![Console Settings](images/FStw2Y7.png)
 
 ??? info "Auto-Play:"
-	![Auto-Play](images/r4lLczk.png)
+    ![Auto-Play](images/r4lLczk.png)
 
 ??? info "Disable:"
-	![Disable](images/V5oEdQl.png)
+    ![Disable](images/V5oEdQl.png)
 
 > *[Settings > System](images/xcCn6fM.png) > [Console Settings](images/FStw2Y7.png) > [Startup and Shutdown](images/DgblBFS.png) > [Startup](images/GJpqOrH.png) > [Xbox Dashboard](images/H4ffGAV.png)*
 
 ??? "Settings > System:"
-	![Image](images/xcCn6fM.png)
+    ![Image](images/xcCn6fM.png)
 
 ??? "Console Settings:"
-	![Image](images/FStw2Y7.png)
+    ![Image](images/FStw2Y7.png)
 
 ??? "Startup and Shutdown:"
-	![Image](images/DgblBFS.png)
+    ![Image](images/DgblBFS.png)
 
 ??? info "Startup:"
-	![Image](images/GJpqOrH.png)
+    ![Image](images/GJpqOrH.png)
 
 ??? info "Xbox Dashboard:"
-	![Image](images/H4ffGAV.png)
+    ![Image](images/H4ffGAV.png)
 
 1. Go to home on the dashboard
 2. Insert the disc into the drive, and close the tray.
@@ -101,27 +101,27 @@ You'll want to change these options to stop game(s) from automatically starting:
 4. Choose what you want to transfer. Keep in mind full games and trials/demos are in separate categories.
 
 ??? info "Settings > System:"
-	![Image](images/xcCn6fM.png)
+    ![Image](images/xcCn6fM.png)
 
 ??? info "Storage:"
-	![Image](images/No4y9xi.png)
+    ![Image](images/No4y9xi.png)
 
 ??? info "Hard Drive:"
-	![Image](images/8EB0EFr.png)
+    ![Image](images/8EB0EFr.png)
 
 ??? info "Press Y (Device Options):"
-	![Image](images/rRaoeAR.png)
+    ![Image](images/rRaoeAR.png)
 
 ??? info "Transfer Content:"
-	![Image](images/wdvYqDR.png)
+    ![Image](images/wdvYqDR.png)
 
 ??? info "USB Storage Device:"
-	![Image](images/6FVly57.png)
+    ![Image](images/6FVly57.png)
 
 > Press right, then *[Start](images/Gpb5Zya.png)*.
 
 ??? info "Start:"
-	![Image](images/Gpb5Zya.png)
+    ![Image](images/Gpb5Zya.png)
 
 Once it's done you can take the USB out of the console.
 
@@ -153,8 +153,8 @@ Once it's done you can take the USB out of the console.
       * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
 !!! info "See also"
-	[Redump Xbox and Xbox 360 dumping guide](http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide)
+    [Redump Xbox and Xbox 360 dumping guide](http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide)
 
 !!! success "Next section..."
-	- [Installing DLCs](install_dlc)
-	- [Activating Licenses (DLCs and Trials)](activate_games)
+    - [Installing DLCs](install_dlc)
+    - [Activating Licenses (DLCs and Trials)](activate_games)

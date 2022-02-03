@@ -1,5 +1,4 @@
 <!--- This file is a snippet --->
-
 Vertical Scale:
 
 |**draw_resolution_scale_y**|**#**|

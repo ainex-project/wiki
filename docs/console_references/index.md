@@ -25,14 +25,14 @@ See the `console_references/documents` folder on GitHub.
 ## Xbox 360 Hardware
 
 === "CPU"
-	|Name + Link|Description + Author|
-	|:---|:---|
-	|[PowerPC Core Instructions](documents/ppc/core_instructions.pdf)|Core PowerPC CPU instruction set by IBM|
-	|[PowerP{ AltiVec Instructions](documents/ppc/altivec_instructions.pdf)|AltiVec Instruction set by Motorola|
+  |Name + Link|Description + Author|
+  |:---|:---|
+  |[PowerPC Core Instructions](documents/ppc/core_instructions.pdf)|Core PowerPC CPU instruction set by IBM|
+  |[PowerP{ AltiVec Instructions](documents/ppc/altivec_instructions.pdf)|AltiVec Instruction set by Motorola|
 
 === "GPU"
-	|Name + Link|Description + Author|
-	|:---|:---|
-	|[AMD R600 Instruction Set Architecture](documents/r600isa.pdf)|Official AMD R600 ISA documentation|
+  |Name + Link|Description + Author|
+  |:---|:---|
+  |[AMD R600 Instruction Set Architecture](documents/r600isa.pdf)|Official AMD R600 ISA documentation|
 
 ## Xbox 360 Software
