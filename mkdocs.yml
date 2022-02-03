@@ -27,6 +27,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
 extra_css:
+    - css/emoji.css
     - css/progress_bars.css
 extra_javascript:
     - javascripts/compatibility_colors.js
@@ -113,7 +114,12 @@ nav:
         - CPU To-Do: development/console-docs/cpu_todo.md
         - GPU: development/console-docs/gpu.md
       - Kernel: development/console-docs/kernel.md
-  - 360 References: console-refs/index.md
+    - References:
+      - development/references/index.md
+      - Xbox 360: development/references/console/index.md
+      - Platforms:
+        - development/references/target/index.md
+        - Android: development/references/target/android.md
   - Wiki:
     - meta/index.md
     - Contribution Guide: meta/contributing.md
