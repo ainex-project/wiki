@@ -126,7 +126,7 @@ See the [Options page](https://github.com/xenia-project/xenia/Options).
 
 Xenia does not support backwards compatibility, and therefore, cannot run original Xbox games.
 
-For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded) and [xqemu](https://github.com/xqemu/xqemu).
+For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded), [xqemu](https://github.com/xqemu/xqemu), and [Xemu](https://github.com/mborgerson/xemu).
 
 ## I have a copy of the XDK. Do you want it?
 
