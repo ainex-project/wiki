@@ -41,7 +41,7 @@ const labelMap = {
  * @returns object containing compatibility data
  */
 async function loadCompatibilityJson() {
-    const res = await fetch("/compatibility/compatibility.json");
+    const res = await fetch("/faq/compatibility/compatibility.json");
     if (res.ok) {
         return await res.json();
     }
