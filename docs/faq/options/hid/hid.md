@@ -7,10 +7,11 @@ This option controls which backend the controller is mapped to.
 | XInput                             |   xinput   |
 | Keyboard                           |   winkey   |
 
-- SDL supports many controllers and many advanced features (not all of them are implemented).
+- SDL supports many controllers and many advanced features (not all of them are implemented).<br/>
   SDL supports an ever-growing list of controllers.
-- XInput supports all Xbox controllers, including the Guitar Hero and Rock Band instruments.<br/>
-  Wireless Xbox 360 controllers and some Xbox One controllers require you to own a USB wireless adapter.
+- XInput supports all Xbox controllers starting with the Xbox 360,
+  including the Guitar Hero and Rock Band instruments.<br/>
+  Wireless Xbox 360 controllers and some Wireless Xbox One controllers require you to own a USB wireless adapter.
 - [WinKey](winkey/winkey) only supports keyboards that are compatible with your device.
 
 !!! info "When using SDL"
