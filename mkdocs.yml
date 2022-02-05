@@ -29,6 +29,7 @@ theme:
 extra_css:
     - css/emoji.css
     - css/progress_bars.css
+    - css/spinner.css
 extra_javascript:
     - javascripts/compatibility_colors.js
     - javascripts/compatibility_list.js
