@@ -8,14 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@master
+      - name: Checkout main
+        uses: actions/checkout@v2.4.0
       - name: Setup Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.7
         with:
           key: ${{ github.ref }}
           path: site
       - name: Deploy MkDocs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: vinomaster/mkdocs-ghpages-docker-action@v1
