@@ -16,6 +16,6 @@ jobs:
           key: ${{ github.ref }}
           path: site
       - name: Deploy MkDocs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@v1.24
+        uses: mhausenblas/mkdocs-deploy-gh-pages@1.24
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
