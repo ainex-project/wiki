@@ -1,0 +1,21 @@
+name: MkDocs Build and Deploy
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@master
+      - name: Setup Cache
+        uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: site
+      - name: Deploy MkDocs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
