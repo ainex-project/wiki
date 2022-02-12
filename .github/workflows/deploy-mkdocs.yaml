@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.4.0
       - name: Setup Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.7
         with:
           key: ${{ github.ref }}
           path: site
       - name: Deploy MkDocs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@v1
+        uses: mhausenblas/mkdocs-deploy-gh-pages@v1.24
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
