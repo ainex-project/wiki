@@ -21,7 +21,7 @@ Modifiers may be added in front of key identifiers to change the meaning of a bi
 |:---------------------------|:-------------------------------------------------------------------|
 |`keybind_a = "0xBA"`        |Bind :xbox-a_button: to ++semicolon++                               |
 |`keybind_x = "X"`           |Bind :xbox-x_button: to ++x++                                       |
-|`keybind_y = "Y U 0xA0"`    |Bind :xbox-y_button: to ++y++, ++x++ or ++lshift++                 |
+|`keybind_y = "Y U 0xA0"`    |Bind :xbox-y_button: to ++y++, ++u++ or ++lshift++                 |
 |`keybind_b = "_0xBA"`       |Bind :xbox-b_button: to ++semicolon++ only when ++cplk++ is enabled |
 |`keybind_dpad_up = "^X"`    |Bind :xbox-dpad_up: to ++shift+x++                                  |
 
