@@ -131,14 +131,3 @@ For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded)
 ## I have a copy of the XDK. Do you want it?
 
 ***No.*** **Do not** post links or downloads to such resources or **you will be banned**.
-
-## Build tweaks
-### 4:3
-
-To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0` instead of 1 [here](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_video.cc#L138).
-
-**[Refer to building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)**
-
-## Hacks/mods
-
-Refer to the [Game hacks, mods, etc. page](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc).
