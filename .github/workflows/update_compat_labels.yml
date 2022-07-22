@@ -1,13 +1,12 @@
 name: Update State Labels
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Get compatibility labels
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
