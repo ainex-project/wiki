@@ -2,7 +2,7 @@
 
 ## How to use
 
-* Run xenia if you haven't before.
+* Run Ainex if you haven't before.
 * [Show file name extensions in Explorer](https://social.technet.microsoft.com/wiki/contents/articles/1784.windows-how-to-view-file-name-extensions.aspx).
 * Go to `Documents\Xenia` and open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/).
 * If a `portable.txt` file is present in the same directory as `xenia.exe` it will be in the same directory as `xenia.exe`.

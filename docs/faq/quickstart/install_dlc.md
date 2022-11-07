@@ -1,7 +1,7 @@
 # How to install DLCs
 
 1. Identify what the Game Title ID is.
-This can be identified by running the game in Xenia.
+This can be identified by running the game in Ainex.
 ![Image](images/fc0rmSc.png)
 
 2. Locate your DLC Content folder from your removable storage.

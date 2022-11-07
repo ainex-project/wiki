@@ -4,7 +4,7 @@
 
 ![JIT Diagram](/console_references/images/CPU-JIT.png)
 
-The JIT is the core of Xenia. It translates Xenon PowerPC code into native
+The JIT is the core of Ainex. It translates Xenon PowerPC code into native
 code runnable on the host computer.
 
 There are 3 phases to translation:
@@ -12,14 +12,14 @@ There are 3 phases to translation:
 2. IR compilation/optimization
 3. Backend emission
 
-PowerPC instructions are translated to Xenia's intermediate representation
+PowerPC instructions are translated to Ainex's intermediate representation
 format in src/xenia/cpu/ppc/ppc_emit_*.cc (e.g. processor control is done in
-[ppc_emit_control.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_emit_control.cc)). HIR opcodes
+[ppc_emit_control.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_emit_control.cc)). HIR opcodes
 are relatively simple opcodes such that any host can define an implementation.
 
 After the HIR is generated, it is ran through a compiler to prep it for generation.
 The compiler is ran in a series of passes, the order of which is defined in
-[ppc_translator.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_translator.cc). Some passes are
+[ppc_translator.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/ppc/ppc_translator.cc). Some passes are
 essential to the successful generation, while others are merely for optimization
 purposes. Compiler passes are defined in src/xenia/cpu/compiler/passes with
 descriptive class names.
@@ -27,23 +27,23 @@ descriptive class names.
 Finally, the backend consumes the HIR and emits code that runs natively on the
 host. Currently, the only backend that exists is the x64 backend, with all the
 emission done in
-[x64_sequences.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_sequences.cc).
+[x64_sequences.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_sequences.cc).
 
 ## ABI
 
-Xenia guest functions are not directly callable, but rather must be called
-through APIs provided by Xenia. Xenia will first execute a thunk to transition
+Ainex guest functions are not directly callable, but rather must be called
+through APIs provided by Ainex. Ainex will first execute a thunk to transition
 the host context to a state dependent on the JIT backend, and that will call the
 guest code.
 
 ### x64
 
-Transition thunks defined in [x64_backend.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_backend.cc#L389).
-Registers are stored on the stack as defined by [StackLayout::Thunk](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_stack_layout.h#L91)
+Transition thunks defined in [x64_backend.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_backend.cc#L389).
+Registers are stored on the stack as defined by [StackLayout::Thunk](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_stack_layout.h#L91)
 for later transitioning back to the host.
 
 Some registers are reserved for usage by the JIT to store temporary variables.
-See: [X64Emitter::gpr_reg_map_ and X64Emitter::xmm_reg_map_](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_emitter.cc#L61).
+See: [X64Emitter::gpr_reg_map_ and X64Emitter::xmm_reg_map_](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/cpu/backend/x64/x64_emitter.cc#L61).
 
 #### Integer Registers
 
@@ -68,7 +68,7 @@ XMM6-XMM15 | JIT temp
 
 ## Memory
 
-Xenia defines virtual memory as a mapped range beginning at Memory::virtual_membase(),
+Ainex defines virtual memory as a mapped range beginning at Memory::virtual_membase(),
 and physical memory as another mapped range from Memory::physical_membase()
 (usually 0x100000000 and 0x200000000, respectively). If the default bases are
 not available, they are shifted left 1 bit until an available range is found.

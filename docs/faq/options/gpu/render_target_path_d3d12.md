@@ -6,4 +6,5 @@ Leave this option blank for auto-selection.
 | RTV (recommended for speed)                               |  rtv     |
 | ROV (*if available*, for higher accuracy in certain cases)|  rov     |
 
-!!! info "[What is ROV (rasterizer-ordered views)?](https://github.com/xenia-project/xenia/wiki/ROV)"
+!!! info "[What is ROV (rasterizer-ordered views)?](https://ainex-project.github.io/wiki/faq/rov/)"
+    --8<-- "docs/faq/rov.md"

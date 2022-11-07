@@ -11,7 +11,7 @@ The Xenos runs commands supplied to it directly by the DirectX bare-bones driver
 via a ringbuffer located in system memory.
 
 The bulk of the command processing code is located at
-[src/xenia/gpu/command_processor.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/command_processor.cc)
+[src/xenia/gpu/command_processor.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/command_processor.cc)
 
 
 ### EDRAM
@@ -25,14 +25,14 @@ TODO: More documentation
 
 ### General
 
-See the top of [gpu_flags.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/gpu_flags.cc).
+See the top of [gpu_flags.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/gpu_flags.cc).
 
 `--vsync=false` will attempt to render the game as fast as possible instead of
 waiting for a fixed 60hz timer.
 
 ### Vulkan
 
-See the top of [vulkan_gpu_flags.cc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/vulkan/vulkan_gpu_flags.cc).
+See the top of [vulkan_gpu_flags.cc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/vulkan/vulkan_gpu_flags.cc).
 
 `vulkan_dump_disasm=true` "Dump shader disassembly. NVIDIA only supported."
 
@@ -63,7 +63,7 @@ Playground tool.
 
 #### Shader Playground
 
-Built separately (for now) under [tools/shader-playground/](https://github.com/xenia-project/xenia/tools/shader-playground/)
+Built separately (for now) under [tools/shader-playground/](https://github.com/ainex-project/ainex/tree/master/tools/shader-playground/)
 is a GUI for interactive shader assembly, disassembly, validation, and
 translation.
 
@@ -74,17 +74,17 @@ D3D compiler to translate the ucode to binary. The D3D compiler is then
 used to disassemble the binary and display the optimized form. If
 `xe-gpu-shader-compiler` has been built the ucode will be passed to that
 for disassembly and that will then be passed through D3D compiler. If
-the output of D3D compiler on the xenia disassembly doesn't match the
+the output of D3D compiler on the ainex disassembly doesn't match the
 original D3D compiler output the box will turn red, indicating that the
 disassembly is broken. Finally, the right most box will show the
 translated shader in the desired format.
 
 For more information and setup instructions see
-[tools/shader-playground/README.md](https://github.com/xenia-project/xenia/tools/shader-playground/README.md).
+[tools/shader-playground/README.md](https://github.com/ainex-project/ainex/tools/shader-playground/README.md).
 
 ### xe-gpu-trace-viewer
 
-To quickly iterate on graphical issues, xenia can dump frames (or sequences of
+To quickly iterate on graphical issues, ainex can dump frames (or sequences of
 frames) while running that can be opened and inspected in a separate app.
 
 The basic workflow is:
@@ -103,7 +103,7 @@ First, specify a path to capture traces to with
 `--trace_gpu_prefix=path/file_prefix_`. All files will have a randomish name
 based on that.
 
-When running xenia.exe you can hit F4 at any time to capture the next frame the
+When running ainex.exe you can hit F4 at any time to capture the next frame the
 game tries to draw (up until a VdSwap call). The file can be used immediately.
 
 #### Capturing Sequences
@@ -115,9 +115,9 @@ you to seek through them in the trace viewer. These files will get large.
 
 ### Command Buffer/Registers
 
-Registers documented at [register_table.inc](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/register_table.inc).
+Registers documented at [register_table.inc](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/register_table.inc).
 
-PM4 commands documented at [xenos.h](https://github.com/xenia-project/xenia/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/xenos.h#L521).
+PM4 commands documented at [xenos.h](https://github.com/ainex-project/ainex/blob/009f709ad480b2658b8dc3229362c72959828b4a/src/xenia/gpu/xenos.h#L521).
 
 #### Performance Counters that may be read back by D3D
 
