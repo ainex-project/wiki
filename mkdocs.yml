@@ -1,8 +1,8 @@
-site_name: Xenia Wiki
-repo_url: https://github.com/xenia-project/wiki.git
+site_name: Ainex Wiki
+repo_url: https://github.com/ainex-project/wiki
 theme:
   name: material
-  favicon: https://raw.githubusercontent.com/xenia-project/xenia/master/assets/icon/16.png
+  favicon: https://raw.githubusercontent.com/ainex-project/ainex/master/assets/icon/16.png
   icon:
     repo: fontawesome/brands/github
   logo: art/icon.svg
@@ -30,9 +30,6 @@ extra_css:
     - css/emoji.css
     - css/progress_bars.css
     - css/spinner.css
-extra_javascript:
-    - javascripts/compatibility_colors.js
-    - javascripts/compatibility_list.js
 strict: true
 markdown_extensions:
   - admonition
@@ -54,7 +51,7 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.keys
   - pymdownx.magiclink:
-      user: xenia-project
+      user: ainex-project
       repo: wiki
   - pymdownx.progressbar:
       progress_increment: 1
@@ -124,4 +121,3 @@ nav:
   - Wiki:
     - meta/index.md
     - Contribution Guide: meta/contributing.md
-
