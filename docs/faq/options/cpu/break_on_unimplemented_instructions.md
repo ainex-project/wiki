@@ -5,4 +5,4 @@
 | On (*default*)                        | true   |
 | Off (hack, [needed for certain games])| false  |
 
-[needed for certain games]:(https://github.com/xenia-project/game-compatibility/issues?q=is%3Aopen+is%3Aissue+label%3Acpu-unimplemented-instruction)
+[needed for certain games]:(https://github.com/ainex-project/game-compatibility/issues?q=is%3Aopen+is%3Aissue+label%3Acpu-unimplemented-instruction)
