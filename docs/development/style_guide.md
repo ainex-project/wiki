@@ -90,21 +90,21 @@ verification during builds, however, stick to the [AOSP Java Code Style Rules](h
 which contain guidelines not only for code formatting, but for the usage of
 language features as well.
 
-The formatting rules used in Xenia match the default Android Studio settings.
-They diverge from the C++ code style rules of Xenia in many areas, such as
+The formatting rules used in Ainex match the default Android Studio settings.
+They diverge from the C++ code style rules of Ainex in many areas, such as
 indentation width and the maximum line length, however, the goal for Android
-formatting in Xenia is to ensure quick development environment setup.
+formatting in Ainex is to ensure quick development environment setup.
 
 In Java code, limit the length of each line to 100 characters. If an assignment
 doesn't fit in the limit, move the right-hand side of it to a separate line with
 8-space indentation. Similarly, if the argument list of a method declaration or
 a call is too long, start the entire argument list on a new line, also indented
-with 8 spaces — this is one of the differences from the C++ code style in Xenia,
+with 8 spaces — this is one of the differences from the C++ code style in Ainex,
 where arguments may be aligned with the opening bracket. In general, follow the
 [rectangle rule](https://github.com/google/google-java-format/wiki/The-Rectangle-Rule)
 so expressions in the code constitute a hierarchy of their bounding rectangles,
 ensuring that with 4-space indentation for block contents and 8-space
-indentation for subexpressions.
+indentation for sub-expressions.
 
 In XML files, if the width of the line with an element exceeds 100 characters,
 or in most cases when there are multiple attributes, each attribute should be

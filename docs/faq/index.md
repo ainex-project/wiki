@@ -1,10 +1,10 @@
 # Frequently Asked Questions
 
-## How do I use Xenia?
+## How do I use Ainex?
 
 Refer to the [Quickstart page](quickstart).
 
-## What are Xenia's system requirements?
+## What are Ainex's system requirements?
 
 See the [Quickstart page](quickstart/system_requirements)
 
@@ -28,13 +28,13 @@ See the guide in [Quickstart](quickstart/dumping).
 
 Upgrade your PC or wait for optimizations.
 
-## Does Xenia support OpenGL/Direct3D11?
+## Does Ainex support OpenGL/Direct3D11?
 
-No. (see the [system requirements](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements))
+No. (see the [system requirements](https://ainex-project.github.io/wiki/faq/quickstart/system_requirements/))
 
 ## Why is the audio delayed?
 
-Audio is one of the least worked on things in Xenia. There is no fix.
+Audio is one of the least worked on things in Ainex. There is no fix.
 
 ## How do I fix "Graphics device lost (probably due to an internal error"?
 
@@ -47,12 +47,12 @@ contributor steps up to build and maintain them. All active contributors are on
 modern systems and busy with higher priority tasks. Whether the emulator runs on
 Windows Vista or not doesn't matter if it can't run games.
 
-## Does Xenia run on Linux or macOS?
+## Does Ainex run on Linux or macOS?
 
-Not natively, but Xenia may run with Wine on Linux **using Vulkan**.
-!!! warning "[D3D12 will only work on Windows 10+ due to vkd3d not being supported.](https://github.com/xenia-project/xenia/wiki/Quickstart#minimum)"
+Not natively, but Ainex may run with Wine on Linux **using Vulkan**.
+!!! warning "[D3D12 will only work on Windows 10+ due to vkd3d not being supported.](https://ainex-project.github.io/wiki/faq/quickstart/system_requirements#minimum)"
 
-macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Xenia.
+macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Ainex.
 
 ## Can I dump games using an Xbox One/Series S|X or run them directly from the disc?
 
@@ -60,19 +60,22 @@ No, and no.
 
 ## Why is my game in trial/demo mode?
 
-See [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
+See [this option](https://github.com/ainex-project/ainex/wiki/Options#Run_games_as_fullactivated).
 
+<!---
 ## How do I use xenia-vfs-dump?
 xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD containers.
 
-You can download it from [here](https://github.com/xenia-project/release-builds-windows/releases/latest/xenia.zip).
+You can download it from [here](https://github.com/ainex-project/ainex/releases/latest/xenia-windows.zip).
 
 Usage: `xenia-vfs-dump [[DestinationOutput](ContainerPath])`
+--->
 
 ---
 
 ## Does game *X* run?
-Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/Q9mxZf9) or test it yourself.
+
+Check the [compatibility list](https://github.com/ainex-project/game-compatibility#game-compatibility). If it's not there, please test it yourself.
 
 <!--- TODO(halotroop2288): Solve the dynamic compatibility tracker problem
 
@@ -82,15 +85,16 @@ Check the [compatibility list](https://github.com/xenia-project/game-compatibili
 --->
 
 ### What's the difference between Gameplay and Playable?
+
 Gameplay means the game reaches gameplay, even if the game is unplayable.
 
 ---
 
 # Why aren't saves working? (Storage device not found/full/not detected, etc)
 
-Saves are broken in some games in Xenia, especially ones with user profile saves.
+Saves are broken in some games in Ainex, especially ones with user profile saves.
 
-As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
+As for saves, etc that worked previously in older builds of Ainex, create a text file in the same directory as xenia.exe named `portable.txt`.
 
 ## Where are saves stored?
 
@@ -99,16 +103,16 @@ Saves are in `Documents\xenia\content` by default.
 If a `portable.txt` file is in the same directory as xenia.exe the `content` folder will be in the same directory as `xenia.exe`.
 
 <!---
-# How do I transfer saves to/from Xenia?
+## How do I transfer saves to/from Ainex?
 --->
 
 ---
 
-## Can Xenia play games online with Xbox Live?
+## Can Ainex play games online with Xbox Live?
 
-Xenia may connect to **custom** servers in the far future, but it will ***never*** connect to official Xbox Live servers.
+Ainex may connect to **custom** servers in the far future, but it will ***never*** connect to official Xbox Live servers.
 
-Xenia does not support System Link either.
+Ainex does not support System Link either.
 
 ## How do I check my FPS?
 
@@ -116,17 +120,18 @@ With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss
 
 ## What is ROV?
 
-See [ROV](https://github.com/xenia-project/xenia/wiki/ROV)
+See [ROV](https://ainex-project.github.io/wiki/faq/rov/)
 
-## What are Xenia's options?
+## What are Ainex's options?
 
-See the [Options page](https://github.com/xenia-project/xenia/Options).
+See the [Options page](https://ainex-project.github.io/wiki/faq/options).
 
-## Can Xenia run original Xbox games?
+## Can Ainex run original Xbox games?
 
-Xenia does not support backwards compatibility, and therefore, cannot run original Xbox games.
+Ainex does not support backwards compatibility, and therefore, cannot run original Xbox games.
 
-For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded), [xqemu](https://github.com/xqemu/xqemu), and [Xemu](https://github.com/mborgerson/xemu).
+For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded), [xqemu](https://github.com/xqemu/xqemu),
+and [Xemu](https://github.com/mborgerson/xemu).
 
 ## I have a copy of the XDK. Do you want it?
 

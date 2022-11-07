@@ -39,16 +39,16 @@
 * GPU: Direct3D 12-compatible or Vulkan-compatible GPU from [this list](https://vulkan.gpuinfo.org/)
   * Direct3D 12 will only work on Windows 10 due to D3D12on7 and vkd3d not being supported.
   * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide frame rates too low for comfortable playing.
-    * AMD GPUs also fall under this due to Xenia triggering driver bugs causing crashes.
+    * AMD GPUs also fall under this due to Ainex triggering driver bugs causing crashes.
 * RAM: 4GB
 * [The Latest x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-Xenia doesn't require any Xbox 360 system files.
+Ainex doesn't require any Xbox 360 system files.
 
-Xenia will check for the minimum supported CPU and GPU on startup and error out
+Ainex will check for the minimum supported CPU and GPU on startup and error out
 if one is not detected. Make sure that you have the latest drivers installed. **You cannot just remove the checks in the code and assume things will work.**
 
-***There are no magical workarounds to make Xenia work on your potato computer.***
+***There are no magical workarounds to make Ainex work on your potato computer.***
 
 ***OpenGL and Direct3D11 or lower are not, and never will be supported.***
 
@@ -58,4 +58,4 @@ Windows Update tends to lag behind, so download GPU drivers from your manufactur
     - **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
 
 !!! success "Next section..."
-    - [Where to Download Xenia](download)
+    - [Where to Download Ainex](download)

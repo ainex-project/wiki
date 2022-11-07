@@ -1,15 +1,15 @@
 # Developer References
 
-In this section, you can find references that may help you as a developer of Xenia, or as a maintainer of the wiki.
+In this section, you can find references that may help you as a developer of Ainex, or as a maintainer of the wiki.
 
 Another great resource you may consider contributing to is the [Free60 Wiki](http://free60project.github.io/wiki).
 If you have some information about the Xbox 360 you would like to write an article on,
 please consider sharing it there, and linking it here.
 
 If you find a relevant (public) PDF file, you can add it to the repo for archival purposes and link it here.
-See the `console-refs/documents` folder on [GitHub](https://github.com/xenia-project/wiki).
+See the `console-refs/documents` folder on [GitHub](https://github.com/ainex-project/wiki).
 
-<!--- Keep in mind Xenia's contribution rules. Do not link to or attempt to add leaked private documents, such as the XDK to this Wiki. -->
+<!--- Keep in mind Ainex's contribution rules. Do not link to or attempt to add leaked private documents, such as the XDK to this Wiki. -->
 
 ## Tools
 

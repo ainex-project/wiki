@@ -15,7 +15,7 @@ drivers.
 * Windows 10 SDK version 10.0.19041.0 (for Visual Studio 2019+, this or any newer version)
 
 ```
-git clone https://github.com/xenia-project/xenia.git
+git clone https://github.com/ainex-project/ainex.git
 cd xenia
 xb setup
 

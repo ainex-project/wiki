@@ -137,7 +137,7 @@ Once it's done you can take the USB out of the console.
 
 --->
 
-### 3. Importing games for use in Xenia
+### 3. Importing games for use in Ainex
 
 1. Insert the USB drive into your PC. Go to `Content`.
     * If the USB drive appears empty enable *[Show hidden files and folders](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)* in Windows Explorer.
@@ -145,11 +145,11 @@ Once it's done you can take the USB out of the console.
 3. The game will have a name with a bunch of letters and numbers just like the folders, and no file extension.
     * XBLA games will be one file, GOD (disc) games will contain a file, along with a *.data folder with the same name.
     * *ContentCache.pkg is irrelevant. Ignore it.*
- 4. To confirm that it is indeed a game try opening the file in Xenia.
- 5. Once you've made sure the file works in Xenia you can rename, or move the folder the game is in for convenience.
+ 4. To confirm that it is indeed a game try opening the file in Ainex.
+ 5. Once you've made sure the file works in Ainex you can rename, or move the folder the game is in for convenience.
     * **FOLDER ABOVE, NOT FILE or *.DATA FOLDER!**
       * (Optional) If the game crashes you can try extracting the game using Velocity.
-      * If the game is extracted you will need to drag `default.xex` onto Xenia.
+      * If the game is extracted you will need to drag `default.xex` onto Ainex.
       * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
 !!! info "See also"

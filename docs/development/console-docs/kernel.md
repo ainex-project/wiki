@@ -1,14 +1,14 @@
 # Kernel Documentation
 
 ## Kernel shims
-Xenia implements all kernel APIs as native functions under the host.
+Ainex implements all kernel APIs as native functions under the host.
 
 When a module is loaded, the loader will find all kernel imports, put a syscall in
 their place, then lookup a kernel export and link it to each import. The JIT will
-generate a sequence of instructions to call into Xenia's export if it encounters a syscall.
+generate a sequence of instructions to call into Ainex's export if it encounters a syscall.
 
 Currently, there are two ways an export can be defined -
-[for example](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_audio.cc):
+[for example](https://github.com/ainex-project/ainex/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_audio.cc):
 * `SHIM_CALL XAudioGetSpeakerConfig_shim(PPCContext* ppc_context, KernelState* kernel_state)`
 * `dword_result_t XAudioGetSpeakerConfig(lpdword_t config_ptr)`
 
@@ -24,7 +24,7 @@ The newer convention does the same, but uses templates to automate the process
 of loading arguments and setting a return value.
 
 ## Kernel Modules
-Xenia has an implementation of two xbox kernel modules, xboxkrnl.exe and xam.xex
+Ainex has an implementation of two xbox kernel modules, xboxkrnl.exe and xam.xex
 
 ### xboxkrnl.exe - Xbox kernel
 
