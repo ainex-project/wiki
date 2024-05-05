@@ -1,0 +1,6 @@
+[{*.css,*.html,*.md}]
+indent_style = space
+indent_size = tab
+tab_width = 4
+
+ij_css_keep_single_line_blocks = true
