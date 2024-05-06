@@ -5,12 +5,13 @@ The Ainex Wiki is the official source of documentation for the [Ainex project](h
 Articles written here are [contributed](https://github.com/ainex-project/wiki/contributors) by members of the Ainex
 community, including the developers of Ainex themselves!
 
-If you would like to contribute to the project, you've come to the right place. Just click the link down below to learn how!
+If you would like to contribute to the project, you've come to the right place.
+Just click the link down below to learn how!
 
 <!--- TODO(halotroop2288) --->
 
 !!! info "Want to contribute to the wiki?"
-    [See the contribution guide](contributing)
+    [See the contribution guide](contributing.md)
 
 ## Contributors ✨
 
@@ -33,4 +34,6 @@ The Ainex Wiki is brought to you by these contributors ([emoji key](https://allc
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors] specification. Contributions of any kind welcome!
+
+[all-contributors]:https://github.com/all-contributors/all-contributors

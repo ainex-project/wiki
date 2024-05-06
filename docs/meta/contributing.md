@@ -2,6 +2,7 @@
 
 ???+ info "Prerequisites"
     ## Prerequisites
+
     - Knowledge and a copy of [Git](http://git-scm.com/)
     - A [GitHub](https://github.com) account
 
@@ -17,6 +18,8 @@
 
 
 ???+ info "Instructions"
+    ## Instructions
+
     ***If this is your first time contributing, be sure to read this entire section before you begin.***
 
     1. Clone the [repo](https://github.com/ainex-project/wiki) and open it in your favorite editor.
@@ -24,7 +27,7 @@
     2. If your editor creates editor-specific files, add them to the `.gitignore` file.
 
     3. Write your article using Markdown. The many features of Markdown extensions can be found in the links below.
-       If you'd like to use a Markdown extension not listed in [mkdocs.yml](https://github.com/ainex-project/wiki/blob/main/mkdocs.yml),
+       If you'd like to use a Markdown extension not listed in [mkdocs.yml],
        you may add them to the list. You should ensure compatibility with other articles (so their layout does not
        accidentally change) before your changes are merged.
         - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
@@ -36,6 +39,8 @@
 
 
 ???+ info "Testing"
+    ## Testing
+
     To serve your copy of the website for testing:
 
     1. Run `python -m mkdocs serve` in your command prompt
@@ -69,17 +74,24 @@ Stumped on how to do something? These resources might help!
   Want to know how to use features like emoji, tables, buttons, and diagrams? It's all in there.
 
 ### Tools
-- [Ainex](/faq/quickstart/download) - You'll probably need it!
+
+- [Ainex](../faq/quickstart/download.md) - You'll probably need it!
 - [Lightshot](https://app.prntscr.com/en/index.html) - An easy screenshot program for Windows and Mac<br/>
   Has a few more features than Snipping Tool, including automatic upload and a dedicated screenshot hotkey.
-- [Flameshot](https://flameshot.org/) - Almost the same as Lightshot, but on Linux!
+    - In Windows 10 version 1803, build 17661 and higher, there is now a built-in shortcut feature
+    that works like Lightshot.<br/>To use it, just press ++windows+shift+s++.
+- [Spectacle](https://apps.kde.org/spectacle) - A good alternative to Lightshot, on Linux.
+    Included in some KDE distributions. By default, the shortcut is simply ++prtsc++.
 
 ### Suggestions
 
-[Config Options](/faq/options) are often added updated, and could always use documentation.
+[Config Options](../faq/options/index.md) are often added updated, and could always use documentation.
 
-[Additional languages can be supported.](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector)
+[Additional languages] can be supported.
 Although Ainex itself does not yet support multiple languages, the wiki can!
-If you would like to translate the wiki to your language, [start here!](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector)
+If you would like to translate the wiki to your language,
+[start here!](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector)
 
-[navigation]:https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+[navigation]:https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation
+[Additional languages]:https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
+[mkdocs.yml]:https://github.com/ainex-project/wiki/blob/main/mkdocs.yml
