@@ -1411,6 +1411,7 @@
 <h1 id="config-settings">Config Settings</h1>
 <p>Each setting has a table explaining the different options.<br/>
 Expand a section by clicking it to see the table.</p>
+<p>Each table follows this pattern.</p>
 <table>
 <thead>
 <tr>
@@ -1426,10 +1427,88 @@ Expand a section by clicking it to see the table.</p>
 </tbody>
 </table>
 <h2 id="apu">APU</h2>
+<details class="info">
+<summary>APU</summary>
+<p><!--- This file is a snippet --->
+The system used to output audio to the speakers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>apu</strong></th>
+<th style="text-align: center;"><strong>string</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">The first available. (<strong>default</strong>)</td>
+<td style="text-align: center;">any</td>
+</tr>
+<tr>
+<td style="text-align: left;">No audio</td>
+<td style="text-align: center;">nop</td>
+</tr>
+<tr>
+<td style="text-align: left;">SDL2</td>
+<td style="text-align: center;">sdl</td>
+</tr>
+<tr>
+<td style="text-align: left;">XAudio2</td>
+<td style="text-align: center;">xaudio2</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
+<summary>FFMPEG Verbose</summary>
+<p><!--- This file is a snippet --->
+Makes FFMPEG output verbose logging.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ffmpeg_verbose</strong></th>
+<th style="text-align: center;"><strong>boolean</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Disable verbose logging. (<strong>default</strong>)</td>
+<td style="text-align: center;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;">Enable verbose logging.</td>
+<td style="text-align: center;">true</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
+<summary>Mute</summary>
+<p><!--- This file is a snippet --->
+Mutes all audio output.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>mute</strong></th>
+<th style="text-align: center;"><strong>boolean</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Audio is enabled. (<strong>default</strong>)</td>
+<td style="text-align: center;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;">Audio is disabled.</td>
+<td style="text-align: center;">true</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="cpu">CPU</h2>
 <details class="info">
 <summary>Break on Unimplemented Instructions</summary>
-<!--- This file is a snippet --->
+<p><!--- This file is a snippet --->
+Break to the host debugger if an unimplemented PowerPC instruction is encountered (or crash if no debugger is attached).</p>
 <table>
 <thead>
 <tr>
@@ -1439,21 +1518,96 @@ Expand a section by clicking it to see the table.</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">On (<em>default</em>)</td>
+<td style="text-align: left;">On (<strong>default</strong>)</td>
 <td style="text-align: center;">true</td>
 </tr>
 <tr>
-<td style="text-align: left;">Off (hack, <a href="(https://github.com/ainex-project/game-compatibility/issues?q=is%3Aopen+is%3Aissue+label%3Acpu-unimplemented-instruction)">needed for certain games</a>)</td>
+<td style="text-align: left;">Off (hack, <a href="https://github.com/ainex-project/game-compatibility/issues?q=is%3Aopen+is%3Aissue+label%3Acpu-unimplemented-instruction">needed for certain games</a>)</td>
 <td style="text-align: center;">false</td>
 </tr>
 </tbody>
 </table>
 </details>
+<details class="info">
+<summary>Clock: No scaling</summary>
+<p><!--- This file is a snippet --->
+Disable real-time clock scaling code.<br/>
+Time management and locking is bypassed.
+Guest system time is directly pulled from the host.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>clock_no_scaling</strong></th>
+<th style="text-align: center;"><strong>bool</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Guest time is scaled proportionally to the running speed. (<strong>default</strong>)</td>
+<td style="text-align: center;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;">System time is pulled from directly the host.</td>
+<td style="text-align: center;">true</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
+<summary>Clock Source: Raw</summary>
+<p><!--- This file is a snippet --->
+Use the <code>RDTSC</code> instruction as the time source.</p>
+<p><strong>Host CPU must support invariant TSC.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>clock_source_raw</strong></th>
+<th style="text-align: center;"><strong>bool</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gets the guest time using the system clock. (<strong>default</strong>)</td>
+<td style="text-align: center;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gets the guest time using the <code>RDTSC</code> instruction.</td>
+<td style="text-align: center;">true</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
+<summary>CPU</summary>
+<p><!--- This file is a snippet --->
+The CPU backend to be used for emulation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>cpu</strong></th>
+<th style="text-align: center;"><strong>string</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">The first available. (<strong>default</strong>)</td>
+<td style="text-align: center;">any</td>
+</tr>
+<tr>
+<td style="text-align: left;">x86_64 architecture</td>
+<td style="text-align: center;">x64</td>
+</tr>
+</tbody>
+</table>
+<p>In all reality, the emulator can only be compiled for one CPU architecture at a time.
+This option is completely useless.</p>
+</details>
 <h2 id="config">Config</h2>
 <h2 id="content">Content</h2>
 <details class="info">
 <summary>License Mask</summary>
-<!--- This file is a snippet --->
+<p><!--- This file is a snippet --->
+Set the license mask for activated content.</p>
 <table>
 <thead>
 <tr>
@@ -1463,26 +1617,48 @@ Expand a section by clicking it to see the table.</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Deactivated/trial/demo mode (<em>default</em>)</td>
+<td style="text-align: left;">No licenses enabled (Demo/Trial mode. <strong>default</strong>)</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;">Activated/full mode</td>
-<td style="text-align: center;">-1 or 1</td>
+<td style="text-align: left;">XBLA activated mode (First license enabled)</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Full mode (All licenses enabled)</td>
+<td style="text-align: center;">-1<br/>0xFFFFFFFF</td>
 </tr>
 </tbody>
 </table>
 </details>
 <h2 id="d3d12">D3D12</h2>
 <details class="info">
+<summary>DXGI Adapter</summary>
+<p><!--- This file is a snippet --->
+Index of the DXGI adapter to use. Enter any positive number to use a specific physical adapter.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>d3d12_adapter</strong></th>
+<th style="text-align: center;"><strong>#</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">WARP software rendering.</td>
+<td style="text-align: center;">-2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Any physical adapter. (<strong>default</strong>)</td>
+<td style="text-align: center;">-1</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
 <summary>CPU Readback After Render Target Resolving</summary>
-<!--- This file is a snippet --->
-<div class="admonition info">
-<p class="admonition-title">This is needed for certain games:</p>
-<ul>
-<li><a href="https://github.com/ainex-project/game-compatibility/issues?q=is%3Aissue+is%3Aopen+label%3Agpu-readback">Titles that might require this option</a></li>
-</ul>
-</div>
+<p><!--- This file is a snippet --->
+This is needed for <a href="https://github.com/ainex-project/game-compatibility/issues?q=is%3Aissue+is%3Aopen+label%3Agpu-readback">certain games</a></p>
 <table>
 <thead>
 <tr>
@@ -1492,7 +1668,7 @@ Expand a section by clicking it to see the table.</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Off (<em>default</em>)</td>
+<td style="text-align: left;">Off (<strong>default</strong>)</td>
 <td style="text-align: center;">false</td>
 </tr>
 <tr>
@@ -1539,7 +1715,7 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Any backend (<em>default, recommended</em>)</td>
+<td style="text-align: left;">Any backend (<strong>default</strong>, <em>recommended</em>)</td>
 <td style="text-align: center;">any</td>
 </tr>
 <tr>
@@ -1584,20 +1760,45 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 </table>
 <div class="admonition info">
 <p class="admonition-title"><a href="../../rov">What is ROV (rasterizer-ordered views)?</a></p>
-<p>Improves accuracy at the cost of performance. Recommended to be <a href="Options#Render_target_path">disabled</a>.</p>
-<p><details><summary>Long ROV (rasterizer-ordered views) explanation [click to expand]</summary></p>
-<p>The Direct3D 12 mode in Ainex has two code paths for rendering output (the currently used one is displayed in the window title bar): "RTV" (Render Target Views) and "ROV" (Rasterizer-Ordered Views).</p>
-<p>On the Xbox 360, pixels are written to a 10 MB memory chip called the eDRAM, and many games reinterpret the data in it in different formats for various purposes (clearing, HDR rendering, etc.) This is not the case on PC, where different render targets are independent from each other.</p>
-<p>The "RT" path uses conventional PC render targets (RTV — Render Target Views — and DSV — Depth-Stencil Views — in Direct3D terms) for rendering output, and copies data between PC render target textures and the 10 MB buffer to allow for reinterpretation of eDRAM data in different formats.</p>
-<p>However, copying has a very heavy performance impact, causing noticeable slowdowns even on modern graphics cards. Another issue is that the Xbox 360 has certain render target formats not available on the PC (7e3 HDR floating-point, 16-bit fixed-point with −32…32 range, 20e4 floating-point depth) that have to be approximated with other render target formats. This causes unfixable transparency issues (because the blending hardware works with different ranges and precision of numbers) and depth buffer-related issues such as shadow acne.</p>
-<p>Using the Rasterizer-Ordered Views (ROV) feature of Direct3D 12 allows Ainex to overcome those issues by doing blending and depth/stencil testing manually in pixel shaders, rendering directly to the 10 MB buffer. This allows for much higher performance since there's no expensive data copying, and better accuracy because of no pixel format limitations.</p>
-<p>"Rasterizer-ordered" here means that access to the buffer is synchronized — if multiple polygons in a single draw call are covering the same pixel, the buffer will be accessed in the correct order, without conflicts that would happen if the data was written through a regular unordered access view (UAV). You can read more about this feature at <a href="https://software.intel.com/en-us/gamedev/articles/rasterizer-order-views-101-a-primer">https://software.intel.com/en-us/gamedev/articles/rasterizer-order-views-101-a-primer</a>, another common use for ROV in game development is order-independent transparency algorithms.</p>
+<p>Improves accuracy at the cost of performance.
+Recommended to be <a href="../faq/options#gpu">disabled</a>.</p>
+<details class="info">
+<summary>Long ROV (rasterizer-ordered views) explanation</summary>
+<p>The Direct3D 12 mode in Ainex has two code paths for rendering output
+(the currently used one is displayed in the window title bar):
+"RTV" (Render Target Views) and "ROV" (Rasterizer-Ordered Views).</p>
+<p>On the Xbox 360, pixels are written to a 10 MB memory chip called the eDRAM,
+and many games reinterpret the data in it in different formats for various purposes (clearing, HDR rendering, etc.)
+This is not the case on PC, where different render targets are independent from each other.</p>
+<p>The "RT" path uses conventional PC render targets
+(RTV — Render Target Views — and DSV — Depth-Stencil Views — in Direct3D terms) for rendering output,
+and copies data between PC render target textures and the 10 MB buffer to allow for reinterpretation
+of eDRAM data in different formats.</p>
+<p>However, copying has a very heavy performance impact, causing noticeable slowdowns even on modern graphics cards.
+Another issue is that the Xbox 360 has certain render target formats not available on the PC (7e3 HDR floating-point,
+16-bit fixed-point with −32…32 range, 20^4 floating-point depth) that have to be approximated with other render
+target formats.
+This causes unfixable transparency issues (because the blending hardware works with different ranges and precision of numbers)
+and depth buffer-related issues such as shadow acne.</p>
+<p>Using the Rasterizer-Ordered Views (ROV) feature of Direct3D 12 allows Ainex to overcome those issues by doing
+blending and depth/stencil testing manually in pixel shaders, rendering directly to the 10 MB buffer.
+This allows for much higher performance since there's no expensive data copying,
+and better accuracy because of no pixel format limitations.</p>
+<p>"Rasterizer-ordered" here means that access to the buffer is synchronized — if multiple polygons in a single draw call
+are covering the same pixel, the buffer will be accessed in the correct order, without conflicts that would happen if
+the data was written through a regular unordered access view (UAV). You can read more about this feature at
+<a href="https://software.intel.com/en-us/gamedev/articles/rasterizer-order-views-101-a-primer">Intel.com</a>,
+another common use for ROV in game development is order-independent transparency algorithms.</p>
 <p>However, this is a hardware feature, and thus on older graphics cards, Ainex is limited to the RT path.</p>
-<p>Rasterizer-ordered views are used by default in Ainex where available, but if you're experiencing graphical issues, you may try <a href="Options/#disable-rov-rasterizer-ordered-views">disabling it in the config</a>.</details></p>
-<p>The minimum requirements for ROV are:
-  * Nvidia GeForce GTX 950 on desktops, GTX 965M on laptops (Maxwell 2nd generation — 2014)
-  * AMD Radeon Vega (GCN 5th generation — 2017)
-  * Intel HD Graphics 4200 (2013)</p>
+<p>Rasterizer-ordered views are used by default in Ainex where available, but if you're experiencing graphical issues,
+you may try <a href="../faq/options#gpu">disabling it in the config</a>.</p>
+</details>
+<p>The minimum requirements for ROV are:</p>
+<ul>
+<li>Nvidia GeForce GTX 950 on desktops, GTX 965M on laptops (Maxwell 2nd generation — 2014)</li>
+<li>AMD Radeon Vega (GCN 5th generation — 2017)</li>
+<li>Intel HD Graphics 4200 (2013)</li>
+</ul>
 </div>
 </details>
 <details class="info">
@@ -1617,7 +1818,7 @@ Horizontal Scale</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">1x (1280x, <em>default</em>)</td>
+<td style="text-align: left;">1x (1280x, <strong>default</strong>)</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
@@ -1659,7 +1860,7 @@ Vertical Scale:</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">1x (x720, <em>default</em>)</td>
+<td style="text-align: left;">1x (x720, <strong>default</strong>)</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
