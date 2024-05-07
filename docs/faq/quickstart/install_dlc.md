@@ -1,20 +1,29 @@
 # How to install DLCs
 
-1. Identify what the Game Title ID is.
-This can be identified by running the game in Ainex.
-![Image](images/fc0rmSc.png)
+## 0. Requirements
 
-2. Locate your DLC Content folder from your removable storage.
-![Image](images/t8IMZiG.png)
+- Read *[Dumping games](dumping.md)*
+- Download Velocity from [here][Velocity].
 
-3. Download Velocity from [here](https://github.com/Gualdimar/Velocity/releases).
+## 1. Extracting
 
-4. Open the Packages with Velocity.
-![Image](images/7q7q0oB.png)
+1. Identify what the Game Title ID is.<br/>
+This can be identified by running the game in Ainex.<br/>
+![Ainex: Title ID in Title Bar](images/TitleBarTitleID.png)
 
-5. Extract the content packages to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
-![Image](images/WyA4yhm.png)
-![Image](images/e4zk397.png)
+2. Locate your DLC Content folder [from your removable storage](dumping.md).
+![File Explorer: DLC directory](images/FileExplorerDLCPackage.png)
+
+3. Open the Packages with Velocity.
+![Velocity: Open Package](images/VelocityOpenPackage.png)
+
+4. Extract the content packages to `Documents\Xenia\<TitleID>\00000002\<PackageHash>`.<br/>
+![Velocity: Package Viewer](images/VelocityPackageViewer.png "Click 'Extract All'")<br/>
+![File Explorer: Content Files](images/FileExplorerContent.png "Extract the files to their corresponding location")
+
+## Continue
 
 !!! success "Next section..."
-    [Activating Games and DLCs](activate_games)
+    [Activating Games and DLCs](activate_games.md)
+
+[Velocity]:https://github.com/Gualdimar/Velocity/releases/download/xex%2Biso-branch/Velocity-XEXISO.rar

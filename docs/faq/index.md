@@ -2,25 +2,25 @@
 
 ## How do I use Ainex?
 
-Refer to the [Quickstart page](quickstart).
+Refer to the [Quickstart page](quickstart/index.md).
 
 ## What are Ainex's system requirements?
 
-See the [Quickstart page](quickstart/system_requirements)
+See the [Quickstart page](quickstart/system_requirements.md)
 
 ## How do I fix the VCRUNTIME error?
 
-Refer to the [Quickstart page](quickstart).
+Refer to the [Quickstart page](quickstart/index.md).
 
 ## Why do I get an error saying "Your CPU does not support AVX"?
 
 Your CPU doesn't meet the minimum requirements.
 
-See the [Quickstart page](quickstart/system_requirements)
+See the [Quickstart page](quickstart/system_requirements.md)
 
 ## How do I dump games?
 
-See the guide in [Quickstart](quickstart/dumping).
+See the guide in [Quickstart](quickstart/dumping.md).
 
 ---
 
@@ -30,7 +30,7 @@ Upgrade your PC or wait for optimizations.
 
 ## Does Ainex support OpenGL/Direct3D11?
 
-No. (see the [system requirements](https://ainex-project.github.io/wiki/faq/quickstart/system_requirements/))
+No. (see the [system requirements](quickstart/system_requirements.md))
 
 ## Why is the audio delayed?
 

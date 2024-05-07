@@ -15,7 +15,7 @@ Welcome to the :xenia:**Ainex Wiki**, the primary source of documentation for
     Please see [README.md](https://github.com/ainex-project/wiki/blob/master/README.md) for details on hosting the docs locally and contributing.
 
 !!! info "Helpful Links"
-    - [Quickstart Guide (Start Here!)](faq/quickstart/)
-    - [Frequently Asked Questions](faq/)
-    - [Developer Guide](development/)
+    - [Quickstart Guide (Start Here!)](faq/quickstart/index.md)
+    - [Frequently Asked Questions](faq/index.md)
+    - [Developer Guide](development/index.md)
     - [Contribute to the Wiki](meta/contributing.md)

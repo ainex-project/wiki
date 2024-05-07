@@ -1,6 +1,8 @@
 <!--- This file is a snippet --->
+Set the license mask for activated content.
 
-|**license_mask**                           |  **#**  |
-|:------------------------------------------|:-------:|
-| Deactivated/trial/demo mode (*default*)   |    0    |
-| Activated/full mode                       | -1 or 1 |
+| **license_mask**                                   |       **#**       |
+|:---------------------------------------------------|:-----------------:|
+| No licenses enabled (Demo/Trial mode. **default**) |         0         |
+| XBLA activated mode (First license enabled)        |         1         |
+| Full mode (All licenses enabled)                   | -1<br/>0xFFFFFFFF |

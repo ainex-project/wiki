@@ -23,16 +23,36 @@
 Each setting has a table explaining the different options.<br/>
 Expand a section by clicking it to see the table.
 
+Each table follows this pattern.
+
 | **setting_name** | **value type** |
 |:-----------------|:--------------:|
 | description      |     value      |
 
 ## APU
 
+??? info "APU"
+    --8<-- "docs/faq/options/apu/index.md"
+
+??? info "FFMPEG Verbose"
+    --8<-- "docs/faq/options/apu/ffmpeg_verbose.md"
+
+??? info "Mute"
+    --8<-- "docs/faq/options/apu/mute.md"
+
 ## CPU
 
 ??? info "Break on Unimplemented Instructions"
     --8<-- "docs/faq/options/cpu/break_on_unimplemented_instructions.md"
+
+??? info "Clock: No scaling"
+    --8<-- "docs/faq/options/cpu/clock_no_scaling.md"
+
+??? info "Clock Source: Raw"
+    --8<-- "docs/faq/options/cpu/clock_source_raw.md"
+
+??? info "CPU"
+    --8<-- "docs/faq/options/cpu/index.md"
 
 ## Config
 
@@ -42,6 +62,9 @@ Expand a section by clicking it to see the table.
     --8<-- "docs/faq/options/content/license_mask.md"
 
 ## D3D12
+
+??? info "DXGI Adapter"
+    --8<-- "docs/faq/options/d3d12/d3d12_adapter.md"
 
 ??? info "CPU Readback After Render Target Resolving"
     --8<-- "docs/faq/options/d3d12/d3d12_readback_resolve.md"

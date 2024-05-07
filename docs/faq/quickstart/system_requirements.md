@@ -58,4 +58,4 @@ Windows Update tends to lag behind, so download GPU drivers from your manufactur
     - **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
 
 !!! success "Next section..."
-    - [Where to Download Ainex](download)
+    - [Where to Download Ainex](download.md)

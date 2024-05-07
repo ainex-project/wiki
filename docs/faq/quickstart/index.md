@@ -10,4 +10,4 @@ how to install it, and how to dump games for use in Ainex.
     - Want to contribute to the wiki? Check out the [wiki contribution guide](/wiki/meta/contributing).
 
 !!! success "Next section...."
-    - [System Requirements](system_requirements)
+    - [System Requirements](system_requirements.md)

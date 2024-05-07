@@ -5,4 +5,4 @@
 **Ainex** is sometimes detected as a virus. Ignore this, as it is a false positive
 
 !!! success "Next section..."
-    - [How to Dump Games](dumping)
+    - [How to Dump Games](dumping.md)
