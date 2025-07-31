@@ -145,7 +145,7 @@ to copy game files from discs to removable storage devices.
 
 Those using [Bad Update](https://github.com/grimdoomer/Xbox360BadUpdate) can also use this method,
 but it is **not recommended** due to the length and unreliability of the process.
-Please see the [stock console method](#Stock-console-method) above.
+Please see the [stock console method](#stock-console-method) above.
 
 ### 1. Copy Files
 
