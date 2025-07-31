@@ -143,6 +143,10 @@ You'll want to change these options to stop game(s) from automatically starting:
 Modded consoles can use custom dashboards or other homebrew apps
 to copy game files from discs to removable storage devices.
 
+Those using [Bad Update](https://github.com/grimdoomer/Xbox360BadUpdate) can also use this method,
+but it is **not recommended** due to the length and unreliability of the process.
+Please see the [stock console method](#Stock-console-method) above.
+
 ### 1. Copy Files
 
 Use [Aurora] or [Freestyle Dash] to copy your game data from the disc to the USB drive.
@@ -195,7 +199,7 @@ See [Redump.org][Redump] for more information.
     - [Installing DLCs](install_dlc.md)
     - [Activating Licenses (DLCs and Trials)](activate_games.md)
 
-[Aurora]:http://phoenix.xboxunity.net/downloads/Aurora%200.7b.2%20-%20Release%20Package.rar
+[Aurora]:https://consolemods.org/wiki/images/d/dd/Aurora_0.7b.2_-_Release_Package.rar
 [Freestyle Dash]:https://consolemods.org/wiki/File:TeamFSD.Freestyle3.0.775.7z
-[Velocity]:https://github.com/Gualdimar/Velocity/releases/download/xex%2Biso-branch/Velocity-XEXISO.rar
+[Velocity]:https://github.com/hetelek/Velocity/releases/latest
 [Redump]:http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide
